@@ -644,7 +644,6 @@
                             <a href="#">LinkedIn</a>
                         </div>
                     </div>
-                    </div>
                     <div class="member-card">
                         <div class="member-photo">SM</div>
                         <div class="member-name">Saisiddhant Moharana</div>
@@ -765,6 +764,7 @@
     </main>
 
     <script>
+        // Function to show selected section
         function showSection(sectionId) {
             // Hide all sections
             const sections = document.querySelectorAll('.section');
@@ -773,6 +773,26 @@
             });
             
             // Show selected section
-            document.getElementById(sectionId).classList.add('active');
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
             
             // Close mobile menu if open
+            const nav = document.getElementById('nav');
+            if (nav) {
+                nav.classList.remove('active');
+            }
+        }
+
+        // Function to toggle mobile menu
+        function toggleMobileMenu() {
+            const nav = document.getElementById('nav');
+            if (nav) {
+                nav.classList.toggle('active');
+            }
+        }
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ensure home
