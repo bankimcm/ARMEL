@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applied Rock Mechanics and Energy Laboratory - IIT Bhubaneswar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            background: white;
+            border-radius: 20px 20px 0 0;
+            min-height: calc(100vh - 80px);
+            box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            padding: 60px 0;
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="1200" height="600" fill="url(%23grid)"/></svg>');
+            color: white;
+            text-align: center;
+            padding: 120px 0;
+            display: block;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        /* Member Cards */
+        .member-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .member-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .member-role {
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .member-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .member-links a {
+            padding: 8px 15px;
+            background: #f8f9fa;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #667eea;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .member-links a:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Publications */
+        .publication {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #667eea;
+        }
+
+        .publication h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .publication-meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .publication-links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .publication-links a {
+            padding: 6px 12px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            transition: background 0.3s ease;
+        }
+
+        .publication-links a:hover {
+            background: #5a67d8;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* News Section */
+        .news-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #28a745;
+        }
+
+        .news-date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: white;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🪨</div>
+                    <div class="logo-text">Applied Rock Mechanics Lab</div>
+                </div>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+                <nav id="nav">
+                    <ul>
+                        <li><a onclick="showSection('home')">Home</a></li>
+                        <li><a onclick="showSection('about')">About</a></li>
+                        <li><a onclick="showSection('research')">Research</a></li>
+                        <li><a onclick="showSection('publications')">Publications</a></li>
+                        <li><a onclick="showSection('members')">Members</a></li>
+                        <li><a onclick="showSection('alumni')">Alumni</a></li>
+                        <li><a onclick="showSection('news')">News</a></li>
+                        <li><a onclick="showSection('contact')">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section hero active">
+            <div class="container">
+                <h1>Applied Rock Mechanics and Energy Laboratory</h1>
+                <p>Advanced Research Group at IIT Bhubaneswar</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Publications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Active Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Alumni</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About the Group</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3><span class="card-icon">🎯</span>Our Mission</h3>
+                        <p>Our research group focuses on understanding rock mechanics and developing innovative solutions for geological carbon sequestration. We aim to contribute to climate change mitigation through advanced geological storage technologies and sustainable energy solutions.</p>
+                    </div>
+                    <div class="card">
+                        <h3><span class="card-icon">🔬</span>Research Focus</h3>
+                        <p>We specialize in rock mechanics, geomechanics, geological carbon sequestration, enhanced oil recovery, and sustainable energy systems. Our interdisciplinary approach combines experimental studies, numerical modeling, and field applications.</p>
+                    </div>
+                    <div class="card">
+                        <h3><span class="card-icon">🏆</span>Achievements</h3>
+                        <p>Our group has received recognition for excellence in research, including the Best Paper Award at the International Conference on Rock Mechanics (2024) and the Outstanding Research Group Award from IIT Bhubaneswar (2023).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section">
+            <div class="container">
+                <h2>Research Areas</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3><span class="card-icon">⚡</span>Rock Mechanics</h3>
+                        <p>Investigating the mechanical properties of rocks under various stress conditions. Our research includes laboratory testing, numerical modeling, and field studies to understand rock behavior in different geological environments.</p>
+                        <div class="publication-links">
+                            <a href="#">Recent Publications</a>
+                            <a href="#">Conference Presentations</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3><span class="card-icon">🌍</span>Geological Carbon Sequestration</h3>
+                        <p>Developing technologies for safe and permanent storage of CO2 in geological formations. Our work focuses on reservoir characterization, injection optimization, and long-term monitoring strategies.</p>
+                        <div class="publication-links">
+                            <a href="#">DOI: 10.1016/j.ijggc.2024.103892</a>
+                            <a href="#">View Research</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3><span class="card-icon">🛢️</span>Enhanced Oil Recovery</h3>
+                        <p>Exploring advanced techniques for improving oil recovery efficiency while minimizing environmental impact. Our research includes CO2-EOR, chemical flooding, and thermal recovery methods.</p>
+                        <div class="publication-links">
+                            <a href="#">Latest Findings</a>
+                            <a href="#">Field Studies</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3><span class="card-icon">🔋</span>Sustainable Energy</h3>
+                        <p>Investigating renewable energy applications in geological systems, including geothermal energy extraction and underground energy storage systems.</p>
+                        <div class="publication-links">
+                            <a href="#">Energy Storage Research</a>
+                            <a href="#">Geothermal Studies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <div class="container">
+                <h2>Publications</h2>
+                <div class="publication">
+                    <h4>Advanced Numerical Modeling of CO2 Injection in Heterogeneous Reservoirs</h4>
+                    <div class="publication-meta">Journal of Geological Carbon Sequestration • 2024 • Impact Factor: 4.8</div>
+                    <p>This study presents a comprehensive numerical framework for simulating CO2 injection in complex geological formations, considering heterogeneity effects and long-term storage security.</p>
+                    <div class="publication-links">
+                        <a href="#">Full Text</a>
+                        <a href="#">DOI: 10.1016/j.jgcs.2024.103456</a>
+                        <a href="#">Abstract</a>
+                    </div>
+                </div>
+                <div class="publication">
+                    <h4>Rock Mechanics Characterization of Carbonate Reservoirs for CO2 Storage</h4>
+                    <div class="publication-meta">International Journal of Rock Mechanics • 2024 • Impact Factor: 5.2</div>
+                    <p>Experimental investigation of mechanical properties of carbonate rocks under varying stress conditions relevant to CO2 storage applications.</p>
+                    <div class="publication-links">
+                        <a href="#">Full Text</a>
+                        <a href="#">DOI: 10.1016/j.ijrmms.2024.105234</a>
+                        <a href="#">Supplementary Data</a>
+                    </div>
+                </div>
+                <div class="publication">
+                    <h4>Optimization of CO2-EOR Operations Using Machine Learning Techniques</h4>
+                    <div class="publication-meta">Energy & Fuels • 2023 • Impact Factor: 4.1</div>
+                    <p>Novel application of machine learning algorithms to optimize CO2 enhanced oil recovery operations, improving efficiency and reducing environmental impact.</p>
+                    <div class="publication-links">
+                        <a href="#">Full Text</a>
+                        <a href="#">DOI: 10.1021/acs.energyfuels.2023.12345</a>
+                        <a href="#">Code Repository</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Members Section -->
+        <section id="members" class="section">
+            <div class="container">
+                <h2>Current Group Members</h2>
+                <div class="card-grid">
+                    <div class="member-card">
+                        <div class="member-photo">DR</div>
+                        <div class="member-name">Dr. Rajesh Kumar</div>
+                        <div class="member-role">Principal Investigator</div>
+                        <p>Research Interests: Rock mechanics, geological carbon sequestration, enhanced oil recovery</p>
+                        <div class="member-links">
+                            <a href="#">Google Scholar</a>
+                            <a href="#">ResearchGate</a>
+                            <a href="#">ORCID</a>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-photo">AS</div>
+                        <div class="member-name">Dr. Anita Sharma</div>
+                        <div class="member-role">Associate Professor</div>
+                        <p>Research Interests: Geomechanics, numerical modeling, reservoir characterization</p>
+                        <div class="member-links">
+                            <a href="#">Google Scholar</a>
+                            <a href="#">ResearchGate</a>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-photo">SM</div>
+                        <div class="member-name">Suresh Mishra</div>
+                        <div class="member-role">PhD Student</div>
+                        <p>Research Focus: CO2 injection optimization, reservoir simulation</p>
+                        <div class="member-links">
+                            <a href="#">Google Scholar</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-photo">PD</div>
+                        <div class="member-name">Priya Das</div>
+                        <div class="member-role">PhD Student</div>
+                        <p>Research Focus: Rock mechanics testing, experimental geomechanics</p>
+                        <div class="member-links">
+                            <a href="#">ResearchGate</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="member-card">
+                        <div class="member-photo">AK</div>
+                        <div class="member-name">Amit Kumar</div>
+                        <div class="member-role">MTech Student</div>
+                        <p>Research Focus: Sustainable energy systems, geothermal applications</p>
+                        <div class="member-links">
+                            <a href="#">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alumni Section -->
+        <section id="alumni" class="section">
+            <div class="container">
+                <h2>Alumni</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Dr. Vikram Singh (PhD 2023)</h3>
+                        <p><strong>Current Position:</strong> Senior Research Scientist, ONGC Research Centre</p>
+                        <p><strong>Research Contribution:</strong> Developed novel techniques for CO2 storage monitoring and verification</p>
+                        <p><em>"The research environment at IIT Bhubaneswar provided me with excellent opportunities to explore cutting-edge technologies in carbon sequestration. The collaborative atmosphere and world-class facilities were instrumental in my professional development."</em></p>
+                    </div>
+                    <div class="card">
+                        <h3>Dr. Meera Patel (PhD 2022)</h3>
+                        <p><strong>Current Position:</strong> Assistant Professor, IIT Roorkee</p>
+                        <p><strong>Research Contribution:</strong> Advanced numerical modeling techniques for rock mechanics applications</p>
+                        <p><em>"Working with this research group opened doors to international collaborations and cutting-edge research opportunities. The mentorship and technical expertise I gained here continue to benefit my academic career."</em></p>
+                    </div>
+                    <div class="card">
+                        <h3>Ravi Sharma (MTech 2023)</h3>
+                        <p><strong>Current Position:</strong> Reservoir Engineer, Cairn Oil & Gas</p>
+                        <p><strong>Research Contribution:</strong> Enhanced oil recovery optimization using machine learning</p>
+                        <p><em>"The practical approach to research and industry connections helped me transition smoothly from academia to industry. The skills I developed here are directly applicable to my current role."</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="section">
+            <div class="container">
+                <h2>Latest News & Updates</h2>
+                <div class="news-item">
+                    <div class="news-date">June 15, 2024</div>
+                    <h3>Research Group Receives Major Grant for Carbon Sequestration Project</h3>
+                    <p>Our research group has been awarded a ₹2.5 crore grant from the Department of Science and Technology for a three-year project on "Advanced Monitoring Technologies for Geological Carbon Sequestration." This funding will support cutting-edge research in CO2 storage verification and long-term monitoring systems.</p>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">May 22, 2024</div>
+                    <h3>International Collaboration with Stanford University</h3>
+                    <p>We are excited to announce a new collaboration with Stanford University's Department of Energy Resources Engineering. This partnership will focus on developing next-generation numerical models for CO2 injection in complex geological formations.</p>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">April 18, 2024</div>
+                    <h3>Best Paper Award at ISRM Congress 2024</h3>
+                    <p>Our paper "Machine Learning Applications in Rock Mechanics: A Comprehensive Review" has won the Best Paper Award at the International Society for Rock Mechanics Congress 2024. Congratulations to all team members involved in this achievement!</p>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">March 10, 2024</div>
+                    <h3>New Laboratory Equipment Installation</h3>
+                    <p>We have successfully installed state-of-the-art triaxial testing equipment in our rock mechanics laboratory. This advanced system will enable us to conduct high-pressure, high-temperature experiments simulating deep geological conditions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Information</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3><span class="card-icon">📧</span>Email</h3>
+                        <p>rockmechanics@iitbbs.ac.in</p>
+                        <p>rajesh.kumar@iitbbs.ac.in</p>
+                    </div>
+                    <div class="card">
+                        <h3><span class="card-icon">📞</span>Phone</h3>
+                        <p>+91-674-713-5555</p>
+                        <p>+91-674-713-5556 (Lab)</p>
+                    </div>
+                    <div class="card">
+                        <h3><span class="card-icon">📍</span>Address</h3>
+                        <p>Applied Rock Mechanics Laboratory<br>
+                        School of Earth, Ocean and Climate Sciences<br>
+                        IIT Bhubaneswar<br>
+                        Argul, Khurda - 752050<br>
+                        Odisha, India</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Get in Touch</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Close mobile menu if open
