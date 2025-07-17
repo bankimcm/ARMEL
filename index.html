@@ -763,36 +763,30 @@
         </section>
     </main>
 
-    <script>
-        // Function to show selected section
-        function showSection(sectionId) {
-            // Hide all sections
-            const sections = document.querySelectorAll('.section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-            });
-            
-            // Show selected section
-            const targetSection = document.getElementById(sectionId);
-            if (targetSection) {
-                targetSection.classList.add('active');
-            }
-            
-            // Close mobile menu if open
-            const nav = document.getElementById('nav');
-            if (nav) {
-                nav.classList.remove('active');
-            }
+<script>
+    function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+
+        // Show selected section
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.classList.add('active');
         }
 
-        // Function to toggle mobile menu
-        function toggleMobileMenu() {
-            const nav = document.getElementById('nav');
-            if (nav) {
-                nav.classList.toggle('active');
-            }
+        // Close mobile menu if open
+        const nav = document.getElementById('nav');
+        if (nav.classList.contains('active')) {
+            nav.classList.remove('active');
         }
+    }
 
-        // Initialize the page
-        document.addEventListener('DOMContentLoaded', function() {
-            // Ensure home
+    function toggleMobileMenu() {
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+    }
+</script>
+
