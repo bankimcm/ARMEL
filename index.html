@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMEL | Applied Rock Mechanics &amp; Energy Laboratory — IIT Bhubaneswar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Izx6F75idngHqetl9eNtde4lVoLiU5s5FBQ1cBJaJY7LeFcbQAPy1mkZ6sY3efBMqtCD2pIEeHrkm2KkudoHUsYOzrQNiDLivgHWJ2SMDHpN8V2d0gwYFuSPIboMcX0YK7n1y8z8DpdGlLQxbK04HuuuzHPqWihbX4VsgMbPw3KyCf04kxv2Leg5oucOC4vVArQo98GfFXC24XJtaJp1dGyXn4yDoeOP-QeHUmoqKUCZ6xL8BygF8_jgCbmbmC93CULXFeHKCw6lJUa9OihnBg" charset="UTF-8"></script><script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5jTkOAnq-za5jPSwRlxSGBuuXiGjQkJF3U6Sv6B581HwtKnf4ZuFYmsfpg5peSOzBhCzGeTYDau9JUxeA_EU17rXaLdxB_fTRJGK57QB4cXRDW1Zf1J9iLl8k1vCBzlCr3STSIa3xKLJTQOZ35pfrGiiEMeWd0UYceNnouQQTx1rCIpvHCkIT-rEPh0ATxXW5-xe4bwAndHHD3n6UqBa-iyXAQdWiTd_1dNtRcPC7VA7m15Q6NQiYUgZUeV1_CaT7ZjbYin-gx-TLrfCV9KNBA" charset="UTF-8"></script><script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=X2_tXv6scVItFrFtAQGbWYDOlj-Zk-c0VDt1ly6IR9a5uX1iP0xIPbhbpZFTslS9IYbWjv4EhNZQpd7kWGa6gBRNaj2fG8g9XfYIfjOTEFbd8elweorSO6Z4f5c-ZoXSMOXpORWKAAiwk1DF4Dv5qxxr79yhwibh4ygQIfF6UUoYGMgISFLsnEBj5FWHTESOTYixSx29y4D7MitXGGsR78ScBkH87WkavpA9NrxPXGdywpRimDJmbOhxNGC1HsHctUJK0WHYAzHJf9IaiMnecA" charset="UTF-8"></script><script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ipb_nnIfIyChcoXioPRDChxQWE0ZcL5YFd02SrNLE_BBrZPOnAvxLyo4mQuSCyxPv1WqqOAI6-BMrtszNmc6p6vCXe9k0lDDdzC5MIRoHQWvwugywrnukxSoz-wkGy6l7U2syeAa4Z5nZ5jeXDw2DV2ep7tqocR2YrK3A6eddnNJZJhdGAOBgeikNLBbYP8vIBMaIYL_noi3_pM4tazmIarBVXkTl7ZXQJiHn0BXVRbo2WkGV_F45_fNbqS8Isuv4ko42ugxgiNc5XeS-8coZg" charset="UTF-8"></script><script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=jQDJ2QhEC5S-wvTo1LNLG95rxfL1UOuLyS8rbx7zrfiLuSzdev7kHMSIgBP-_NDRAWiBR_qXIve9gK6rudEfrYk6N9z_-vvfCV_8kE7skiFQW37i8gkzeCRCrxOAJE08scpPiGAN6mZJQVEkGRnob2Y7lnwoK1bT6Mp2FkjaNEyk4DkNFVlBYRmpNcPoN6xG45z37BpqnvlAr2XrrMrBZNSs8uP5dAnjg60Imo2UmTgFdY7ZH_Vldc0T8LTYjqx5yFZUT7LlVnFGYK4BmAk1eA" charset="UTF-8"></script><script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ac86w-7b_9jNiT_YIrx0FSRtQ13Ri13_TPahNKQZOsy7vLOBbgFGgzav_Sb4nLKHqEDi8WtrhHnxkhk7dL-qe01eKNFEtUC3IYYU2pOb1jvWt4xeFcGEpd-9klhDbAvKFB9bq5Y2aIw086S2WqgA-Fzy4bxAWVJHo6e0t1QP6ezTmy7CHMmvf0f3Zo5Dmb8hrFRchEI5zVJq5IwhAvbzIzmF0CJ3qJfLlwAzO7p5ZmyvxhYZUEy11qicYRhEogObmhAbJO6kEf0nqumyfhsyOA" charset="UTF-8"></script><script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=D4ksCwFNxZK6a7pqbrqBFV0LAa0yblHaTKIAvCcHwkImMOTPoGUUv4aOauVo53UrnJTxNb9RoFul3fBp2QBEa642ILupddXpsGS9GK59IqHdg61Um66PfIqgmSkpl1nbyUXjiRNwjTXVZXMmxpDFPh0HUv6yizEhtyGR1oO_zB_HkkhVdAEQkvpszniK1ywjePk975aw2CRuZHPmjFpixGTLyZ9aHjyY_RIOxz970ORN03VYM7VgRttK5Mn_sLMF3cvvdx43_5uJ_tymBVNAmQ" charset="UTF-8"></script><script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=l3CdHwgWqWCJhfjOIv7GnJAnmg8Ht4Doo0BrbvBS5zjT3_DGyF9hZGuTt1IDUnX5TLoflO0-ImB-LntEZP8_4yBOD-uaMG8Klim_8hsJDsaWfizvKDEFv7aBe150qKKUBXiJZXmORTZBWAMwTdngbD0_4feiFfXrCbW_7e5BfxwpPBR50miMAwIdhTAzqeCR4Flv8AoyB3m7WhyoDmm26JBJ7KXUjW2E39nGdREf_sL_X6Rv8C1ZBdM71NtEiKaS7htEyMnsXgFu6VsZdGe2EA" charset="UTF-8"></script><script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=L8hzeatWlbc2e8QgbNGt_HgZdU9LYZmzu7Y8EADz2HmwfAnsvI6xQLbZDWhvjMhOliSvlPMkcn3sprp7Ep9V8_xR1S75YYVxRbfMpgQj2cBheiBtqYhbs4IMDxN4U64TfbwQf0tmNMxRcU5BMiYKgGKxVt5oeqG5A7huSO5SFLOl2-P5_l412ols9AGOM3Y6YVMEy_Zt7FHW_AcKr_irzMJcbdfBAQkEtJLCiLuDJKYT55fpeHPRoyWfS_rzGp2Ndk5Ihb29DVtx_YBwzaIcXg" charset="UTF-8"></script><style>
+/* ═══════════════════════════════════════════════════════
+   ARMEL — Precision Theme v2  |  Dynamic + Animated
+   Palette: Deep Slate + Teal  |  Scientific & Rigorous
+═══════════════════════════════════════════════════════ */
+:root{
+  --ink:#0d1b2a; --slate:#1e3a5f; --slate-mid:#2c5282;
+  --teal:#0d9488; --teal-light:#14b8a6; --teal-dim:#0f766e;
+  --silver:#64748b; --mist:#cbd5e1; --fog:#e2e8f0;
+  --snow:#f8fafc; --white:#ffffff;
+  --amber:#d97706; --amber-l:#f59e0b;
+  --font-d:"Playfair Display","Times New Roman",serif;
+  --font-b:"Outfit","Helvetica Neue",sans-serif;
+  --font-m:"JetBrains Mono","Courier New",monospace;
+  --r-xs:4px;--r-sm:6px;--r-md:10px;--r-lg:16px;--r-xl:24px;
+  --sh-xs:0 1px 3px rgba(13,27,42,.06);
+  --sh-sm:0 2px 8px rgba(13,27,42,.08);
+  --sh-md:0 4px 20px rgba(13,27,42,.10);
+  --sh-lg:0 8px 40px rgba(13,27,42,.14);
+  --tr:.25s cubic-bezier(.4,0,.2,1);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  scroll-behavior:smooth;
+}
+body{font-family:var(--font-b);color:var(--ink);background:var(--snow);line-height:1.75;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;font-size:18px}
+@media(-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){
+  .mem-photo,.aly-photo,.pi-photo{
+    image-rendering:auto;
+    filter:none;
+  }
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+/* Global image sharpening */
+img{
+  
+  
+  
+  
+  
+}
+/* Smooth override for facility/service images that need natural scaling */
+.fac-img,.svc-imgs img{
+  image-rendering:auto;
+  
+}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--fog)}
+::-webkit-scrollbar-thumb{background:var(--teal);border-radius:3px}
+
+/* ── HEADER ── */
+header{
+  background:rgba(248,250,252,.97);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  border-bottom:1px solid var(--fog);
+  box-shadow:0 1px 0 var(--mist),var(--sh-xs);
+  transition:box-shadow .3s;
+}
+header.scrolled{box-shadow:var(--sh-md)}
+.header-inner{max-width:1280px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{
+display:flex;
+align-items:center;
+gap:18px;
+cursor:pointer;
+}
+.logo > div:last-child{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+.logo-mark{width:70px;height:70px;flex-shrink:0;border-radius:50%;overflow:hidden;border:2px solid var(--fog);transition:border-color var(--tr),transform var(--tr)}
+.logo-mark img{width:100%;height:100%;object-fit:cover;transform:translateZ(0)}
+.logo:hover .logo-mark{border-color:var(--teal);transform:rotate(5deg)}
+.logo-abbr{font-family:var(--font-d);font-size:1.35rem;font-weight:700;color:var(--slate);line-height:1;letter-spacing:.01em}
+.logo-full{
+    font-family:var(--font-d);
+    font-size:1.35rem;
+    font-weight:700;
+    color:var(--teal);
+    line-height:1.05;
+    letter-spacing:.01em;
+    margin-top:4px;
+    text-align:center;
+}
+nav ul{list-style:none;display:flex;gap:1px}
+nav a{font-size:.825rem;font-weight:500;color:var(--silver);padding:6px 11px;border-radius:var(--r-sm);transition:color var(--tr),background var(--tr);cursor:pointer;white-space:nowrap;letter-spacing:.01em}
+nav a:hover,nav a.active-link{color:var(--white);background:var(--teal)}
+.mob-toggle{display:none;background:none;border:1.5px solid var(--mist);border-radius:var(--r-sm);padding:7px 10px;cursor:pointer;font-size:1rem;color:var(--slate)}
+
+/* ── LAYOUT ── */
+main{margin-top:66px}
+.container{max-width:1280px;margin:0 auto;padding:0 28px}
+.section{
+    display:none;
+    min-height:calc(100vh - 66px);
+    animation:fadeSection .35s ease;
+}
+.section.active{
+    display:block;
+}
+.section.active#home{
+    display:flex;
+}
+@keyframes fadeSection{
+    from{opacity:0;transform:translateY(10px);}
+    to{opacity:1;transform:none;}
+}
+.sec-pad{padding:84px 0}
+.sec-head{text-align:center;margin-bottom:56px}
+.sec-head h2{font-family:var(--font-d);font-size:clamp(1.9rem,3.8vw,2.9rem);font-weight:700;color:var(--slate);line-height:1.15;letter-spacing:-.01em}
+.sec-head p{margin-top:12px;color:var(--silver);font-size:.97rem;max-width:540px;margin-left:auto;margin-right:auto;line-height:1.75}
+.divider{width:40px;height:2px;background:var(--teal);margin:14px auto 0;border-radius:1px}
+
+/* ── HERO ── */
+#home{
+  min-height:100vh;
+  background:var(--slate);
+  flex-direction:column;justify-content:center;
+  padding:88px 0 60px;position:relative;overflow:hidden;
+}
+/* Animated canvas sits behind content */
+#hero-canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+
+/* Gradient overlay so text stays readable */
+#home::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(110deg,rgba(13,27,42,.82) 0%,rgba(13,27,42,.55) 55%,rgba(13,27,42,.2) 100%);
+  pointer-events:none;
+}
+.hero-inner{position:relative;z-index:1;color:var(--white)}
+.hero-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:20px;
+  border:2px solid rgba(20,184,166,.45);
+  border-radius:12px;
+  padding:6px 24px;
+  font-family:var(--font-b);
+  font-size:1.15rem;
+  font-weight:700;
+  color:var(--teal-light);
+  letter-spacing:.03em;
+  background:rgba(13,148,136,.18);
+  box-shadow:0 8px 30px rgba(13,148,136,.18);
+  margin-bottom:34px;
+  animation:fadeUp .7s ease both;
+}
+.hero-eyebrow::before{content:"▶";font-size:.55rem}
+.hero-inner h1{
+  font-family:var(--font-d);font-size:clamp(2.4rem,5.5vw,4.6rem);
+  font-weight:900;color:var(--white);line-height:1.08;max-width:820px;
+  letter-spacing:-.02em;animation:fadeUp .7s .08s ease both;
+}
+.hero-inner h1 em{font-style:italic;color:var(--teal-light)}
+.hero-sub{margin-top:20px;font-size:1.05rem;color:rgba(255,255,255,.72);max-width:560px;line-height:1.8;animation:fadeUp .7s .16s ease both}
+.hero-actions{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap;animation:fadeUp .7s .24s ease both}
+.btn-p{background:var(--teal);color:var(--white);border:none;padding:12px 24px;border-radius:var(--r-sm);font-family:var(--font-b);font-size:.875rem;font-weight:600;cursor:pointer;transition:background var(--tr),transform var(--tr),box-shadow var(--tr);letter-spacing:.02em}
+.btn-p:hover{background:var(--teal-dim);transform:translateY(-2px);box-shadow:0 6px 20px rgba(13,148,136,.4)}
+.btn-o{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.35);padding:11px 24px;border-radius:var(--r-sm);font-family:var(--font-b);font-size:.875rem;font-weight:600;cursor:pointer;transition:border-color var(--tr),background var(--tr);letter-spacing:.02em}
+.btn-o:hover{border-color:var(--teal-light);background:rgba(13,148,136,.15)}
+
+/* Stats */
+.hero-stats{display:flex;gap:0;margin-top:56px;border-top:1px solid rgba(255,255,255,.1);padding-top:32px;animation:fadeUp .7s .32s ease both}
+.h-stat{flex:1;padding-right:32px;border-right:1px solid rgba(255,255,255,.1)}
+.h-stat:last-child{border-right:none;padding-right:0;padding-left:32px}
+.h-stat:not(:first-child){padding-left:32px}
+.h-stat-n{font-family:var(--font-m);font-size:2.5rem;font-weight:500;color:var(--teal-light);line-height:1;letter-spacing:-.02em}
+.h-stat-l{font-size:.75rem;color:rgba(255,255,255,.5);margin-top:5px;font-weight:500;text-transform:uppercase;letter-spacing:.07em}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .65s ease,transform .65s ease}
+.reveal-left.visible{opacity:1;transform:none}
+.reveal-right{opacity:0;transform:translateX(32px);transition:opacity .65s ease,transform .65s ease}
+.reveal-right.visible{opacity:1;transform:none}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.about-text h2{font-family:var(--font-d);font-size:clamp(1.7rem,3.2vw,2.5rem);font-weight:700;color:var(--slate);line-height:1.2;letter-spacing:-.01em}
+.about-text h2 span{color:var(--teal)}
+.about-text p{margin-top:16px;color:var(--silver);line-height:1.85;font-size:.95rem;text-align:justify;text-justify:inter-word}
+.pi-box{margin-top:28px;display:flex;align-items:center;gap:16px;background:var(--snow);border:1px solid var(--fog);border-radius:var(--r-lg);padding:16px 18px;box-shadow:var(--sh-xs);border-left:3px solid var(--teal);transition:box-shadow var(--tr)}
+.pi-box:hover{box-shadow:var(--sh-md)}
+.pi-photo{width:68px;height:68px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;border:2px solid var(--fog);transform:translateZ(0)}
+.pi-fb{width:58px;height:58px;border-radius:50%;background:var(--slate);display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:1.15rem;color:var(--white);flex-shrink:0}
+.pi-info strong{display:block;font-weight:600;color:var(--slate);font-size:.92rem}
+.pi-info span{font-size:.8rem;color:var(--teal-dim);font-weight:500}
+.pi-info a{display:inline-block;margin-top:6px;font-size:.76rem;padding:3px 10px;background:var(--fog);border:1px solid var(--mist);border-radius:var(--r-sm);color:var(--slate-mid);transition:background var(--tr),color var(--tr)}
+.pi-info a:hover{background:var(--teal);color:var(--white);border-color:var(--teal)}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pillar{background:var(--white);border:1px solid var(--fog);border-radius:var(--r-md);padding:18px;transition:box-shadow var(--tr),border-color var(--tr),transform var(--tr);position:relative;overflow:hidden}
+.pillar::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:var(--teal);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.pillar:hover{box-shadow:var(--sh-md);border-color:var(--mist);transform:translateY(-3px)}
+.pillar:hover::before{transform:scaleX(1)}
+.p-icon{font-size:.95rem;margin-bottom:8px}
+.pillar h4{font-family:var(--font-b);font-size:.88rem;font-weight:700;color:var(--slate);margin-bottom:5px;letter-spacing:.01em;text-transform:uppercase;text-align:justify}
+.pillar p{font-size:.81rem;color:var(--silver);line-height:1.65;text-align:justify;text-justify:inter-word}
+
+/* ── RESEARCH ── */
+.ra-grid{display:grid;grid-template-columns:1fr;gap:18px;max-width:1100px;margin:0 auto 64px auto}
+.ra-card{background:var(--white);border:1px solid var(--fog);border-radius:var(--r-md);padding:26px 28px;transition:box-shadow var(--tr),border-color var(--tr),transform var(--tr);position:relative;overflow:hidden}
+.ra-card::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--teal),var(--teal-light));transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+.ra-card:hover{box-shadow:var(--sh-md);border-color:var(--teal);transform:translateY(-4px)}
+.ra-card:hover::after{transform:scaleX(1)}
+.ra-num{font-family:var(--font-m);font-size:.72rem;font-weight:500;color:var(--teal);letter-spacing:.1em;margin-bottom:10px}
+.ra-card h3{font-family:var(--font-b);font-size:.95rem;font-weight:700;color:var(--slate);margin-bottom:8px;letter-spacing:.01em;text-transform:uppercase}
+.ra-card p{font-size:.84rem;color:var(--silver);line-height:1.72;text-align:justify}
+.sub-title{font-family:var(--font-d);font-size:1.55rem;font-weight:700;color:var(--slate);margin-bottom:22px;padding-bottom:10px;border-bottom:1px solid var(--fog);display:flex;align-items:center;gap:12px;letter-spacing:-.01em}
+.sub-title::before{content:"";width:3px;height:1.4em;background:var(--teal);border-radius:2px;flex-shrink:0}
+
+/* ── FACILITIES ── */
+.fac-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:16px;margin-bottom:56px}
+.fac-card{background:var(--white);border:1px solid var(--fog);border-radius:var(--r-md);padding:16px 12px;text-align:center;transition:box-shadow var(--tr),border-color var(--tr),transform var(--tr);position:relative;overflow:visible}
+.fac-card:hover{box-shadow:var(--sh-md);border-color:var(--teal);transform:translateY(-3px);z-index:999}
+.fac-img{width:100%;max-width:152px;height:124px;object-fit:cover;border-radius:var(--r-sm);margin:0 auto 10px;cursor:pointer;transition:transform .45s ease;position:relative;z-index:1;transform-origin:center center}
+.fac-card:hover .fac-img{transform:scale(2.5);z-index:1001;box-shadow:0 15px 40px rgba(0,0,0,.35)}
+.fac-card h3{font-size:.82rem;font-weight:600;color:var(--slate);line-height:1.4;letter-spacing:.01em}
+.fac-hint{font-family:var(--font-m);font-size:.68rem;color:var(--teal);margin-top:4px;letter-spacing:.04em}
+
+/* ── PROJECTS ── */
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-bottom:18px}.current-projects,.completed-projects{grid-template-columns:1fr;max-width:1100px;margin-left:auto;margin-right:auto}
+.proj-card{background:var(--white);border:1px solid var(--fog);border-radius:var(--r-md);padding:22px 22px 22px 26px;position:relative;overflow:hidden;transition:box-shadow var(--tr),transform var(--tr)}
+.proj-card::before{content:"";position:absolute;top:0;left:0;width:3px;height:100%;background:var(--teal)}
+.proj-card.done::before{background:var(--mist)}
+.proj-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px)}
+.badge{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:var(--r-xs);font-family:var(--font-m);font-size:.68rem;font-weight:500;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
+.badge::before{content:"";width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.badge-a{background:rgba(13,148,136,.08);color:var(--teal-dim)}
+.badge-a::before{background:var(--teal);animation:pulse 2s infinite}
+.badge-c{background:var(--fog);color:var(--silver)}
+.badge-c::before{background:var(--mist)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.proj-card h3{font-family:var(--font-b);font-size:.9rem;font-weight:700;color:var(--slate);margin-bottom:10px;line-height:1.45;letter-spacing:.005em;text-align:justify}
+.proj-meta{font-family:var(--font-m);font-size:.75rem;color:var(--teal-dim);margin-bottom:3px;letter-spacing:.02em}
+.proj-meta strong{color:var(--slate);font-weight:600}
+.proj-card p{font-size:.85rem;color:var(--silver);margin-top:8px;line-height:1.7;text-align:justify;text-justify:inter-word}
+
+/* ── SERVICES ── */
+.svc-grid{display:grid;grid-template-columns:1fr;gap:18px;max-width:1100px;margin:0 auto}
+.svc-card{background:var(--white);border:1px solid var(--fog);border-radius:var(--r-md);padding:28px 30px;transition:box-shadow var(--tr),border-color var(--tr),transform var(--tr)}
+.svc-card:hover{box-shadow:var(--sh-md);border-color:var(--teal);transform:translateY(-3px)}
+.svc-icon{font-size:1.5rem;margin-bottom:12px;display:block}
+.svc-card h3{font-family:var(--font-b);font-size:.9rem;font-weight:700;color:var(--slate);margin-bottom:8px;line-height:1.35;text-transform:uppercase;letter-spacing:.02em}
+.svc-card p{font-size:.84rem;color:var(--silver);line-height:1.72;text-align:justify}
+.svc-imgs{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.svc-imgs img{width:160px;height:110px;object-fit:cover;border-radius:var(--r-sm);border:1px solid var(--fog)}
+
+/* ── PUBLICATIONS ── */
+.pub-cat-title{font-family:var(--font-d);font-size:1.45rem;font-weight:700;color:var(--slate);margin:48px 0 16px;padding-bottom:8px;border-bottom:1px solid var(--fog);display:flex;align-items:center;gap:12px;letter-spacing:-.01em}
+.pub-cat-title:first-of-type{margin-top:0}
+.pub-badge{font-family:var(--font-m);font-size:.69rem;background:rgba(13,148,136,.08);border:1px solid rgba(13,148,136,.2);color:var(--teal-dim);padding:2px 10px;border-radius:var(--r-xs);font-weight:500}
+.pub-list{list-style:none;counter-reset:pc}
+.pub-list li{counter-increment:pc;position:relative;padding-left:44px;margin-bottom:12px}
+.pub-list li::before{content:counter(pc);position:absolute;left:0;top:18px;width:28px;height:28px;background:var(--snow);border:1px solid var(--fog);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-family:var(--font-m);font-size:.72rem;font-weight:500;color:var(--teal)}
+.pub{background:var(--white);border:1px solid var(--fog);border-radius:var(--r-md);padding:18px 20px;border-left:2px solid var(--teal);transition:box-shadow var(--tr),transform var(--tr)}
+.pub:hover{box-shadow:var(--sh-sm);transform:translateX(3px)}
+.pub h4{font-family:var(--font-b);font-size:.92rem;font-weight:700;color:var(--slate);margin-bottom:5px;line-height:1.45}
+.pub-meta{font-size:.79rem;color:var(--silver);margin-bottom:2px}
+.pub-meta.jn{font-family:var(--font-m);font-weight:500;color:var(--teal-dim);font-size:.77rem}
+.if-tag{display:inline-block;background:rgba(217,119,6,.08);color:var(--amber);border-radius:var(--r-xs);padding:1px 6px;font-family:var(--font-m);font-size:.69rem;font-weight:500;margin-left:5px}
+.pub p{font-size:.84rem;color:var(--silver);margin-top:6px;line-height:1.68}
+.pub-links{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}
+.pub-links a{padding:3px 10px;background:var(--teal);color:var(--white);border-radius:var(--r-xs);font-family:var(--font-m);font-size:.72rem;font-weight:500;transition:background var(--tr)}
+.pub-links a:hover{background:var(--teal-dim)}
+
+/* ── MEMBERS ── */
+.mem-cat{font-family:var(--font-m);font-size:.75rem;font-weight:500;color:var(--teal);letter-spacing:.1em;margin:40px 0 16px;padding-bottom:6px;border-bottom:1px solid var(--fog)}
+.mem-cat:first-of-type{margin-top:0}
+.mem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,260px));gap:24px;justify-content:center}
+.mem-grid.pi-g{grid-template-columns:repeat(auto-fit,minmax(280px,280px));max-width:none;justify-content:center}
+.mem-card{background:var(--white);border:1px solid var(--fog);border-radius:var(--r-md);padding:24px 20px;text-align:center;transition:box-shadow var(--tr),border-color var(--tr),transform var(--tr)}
+.mem-card:hover{box-shadow:var(--sh-md);border-color:var(--teal);transform:translateY(-4px)}
+.mem-pw{width:200px;height:200px;margin:0 auto 16px}
+.pi-g .mem-pw{width:240px;height:240px}
+.mem-photo{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid var(--fog);transition:border-color var(--tr);backface-visibility:hidden}
+.mem-card:hover .mem-photo{border-color:var(--teal);transform:scale(1.03)}
+.mem-fb{width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,var(--slate),var(--slate-mid));display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:1.5rem;color:var(--white);font-weight:700}
+.mem-name{font-family:var(--font-b);font-size:.9rem;font-weight:700;color:var(--slate);margin-bottom:3px}
+.mem-role{font-family:var(--font-m);font-size:.7rem;color:var(--teal);font-weight:500;letter-spacing:.07em;margin-bottom:7px}
+.mem-join{font-size:.75rem;color:#64748b;font-style:italic;margin-bottom:10px;font-weight:500}
+.mem-focus{font-size:.8rem;color:var(--silver);line-height:1.5;margin-bottom:11px}
+.mem-links{display:flex;justify-content:center;gap:6px;flex-wrap:wrap}
+.mem-links a{padding:3px 10px;background:var(--snow);border:1px solid var(--fog);border-radius:var(--r-xs);color:var(--slate-mid);font-size:.74rem;font-weight:500;transition:background var(--tr),color var(--tr),border-color var(--tr)}
+.mem-links a:hover{background:var(--teal);color:var(--white);border-color:var(--teal)}
+
+/* ── ALUMNI ── */
+.aly-year{font-family:var(--font-m);font-size:.8rem;font-weight:500;color:var(--teal);letter-spacing:.1em;text-transform:uppercase;margin:36px 0 16px;display:flex;align-items:center;gap:12px}
+.aly-year::after{content:"";flex:1;height:1px;background:var(--fog)}
+.aly-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,340px));gap:28px;justify-content:center}
+.aly-card{background:var(--white);border:1px solid var(--fog);border-radius:var(--r-md);padding:28px 24px;transition:box-shadow var(--tr),transform var(--tr)}
+.aly-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px)}
+.aly-photo{width:200px;height:200px;border-radius:50%;object-fit:cover;object-position:center top;margin:0 auto 14px;display:block;border:2px solid var(--fog);backface-visibility:hidden}
+.aly-fb{width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,var(--slate),var(--slate-mid));display:flex;align-items:center;justify-content:center;font-family:var(--font-d);font-size:1.6rem;color:var(--white);font-weight:700;margin:0 auto 14px}
+.aly-card h3{font-family:var(--font-b);font-size:.95rem;font-weight:700;color:var(--slate);text-align:justify;text-align-last:center;margin-bottom:12px}
+.aly-card p{font-size:.83rem;color:var(--silver);margin-bottom:7px;line-height:1.65;text-align:justify}
+.aly-card p strong{color:var(--slate)}
+.aly-quote{background:var(--snow);border-left:2px solid var(--teal);padding:10px 13px;border-radius:0 var(--r-sm) var(--r-sm) 0;margin-top:10px;font-size:.8rem;color:var(--silver);font-style:italic;line-height:1.65;text-align:justify}
+
+/* ── NEWS ── */
+.news-list{display:flex;flex-direction:column;gap:14px}
+.news-item{background:var(--white);border:1px solid var(--fog);border-radius:var(--r-md);padding:22px 22px 22px 28px;position:relative;transition:box-shadow var(--tr),transform var(--tr)}
+.news-item:hover{box-shadow:var(--sh-md);transform:translateX(4px)}
+.news-item::before{content:"";position:absolute;left:0;top:0;width:3px;height:100%;background:var(--teal);border-radius:var(--r-md) 0 0 var(--r-md)}
+.news-date{font-family:var(--font-m);font-size:.72rem;font-weight:500;color:var(--teal);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
+.news-item h3{font-family:var(--font-b);font-size:1rem;font-weight:700;color:var(--slate);margin-bottom:6px;line-height:1.38}
+.news-item p{font-size:.875rem;color:var(--silver);line-height:1.72}
+
+/* ── CONTACT ── */
+.ct-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:44px}
+.ct-info h3,.ct-form h3{font-family:var(--font-d);font-size:1.4rem;font-weight:700;color:var(--slate);margin-bottom:20px;letter-spacing:-.01em}
+.ct-block{background:var(--white);border:1px solid var(--fog);border-radius:var(--r-md);padding:16px 18px;margin-bottom:12px;transition:border-color var(--tr)}
+.ct-block:hover{border-color:var(--teal)}
+.ct-lbl{font-family:var(--font-m);font-size:.7rem;font-weight:500;color:var(--teal);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.ct-block p,.ct-block a{font-size:.875rem;color:var(--slate);line-height:1.7}
+.ct-block a:hover{color:var(--teal)}
+.map-wrap{border-radius:var(--r-md);overflow:hidden;height:200px;border:1px solid var(--fog);margin-top:12px}
+.map-wrap iframe{width:100%;height:100%;border:none;display:block}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fg{margin-bottom:14px}
+.fg label{display:block;font-size:.8rem;font-weight:600;color:var(--slate);margin-bottom:5px;letter-spacing:.02em;text-transform:uppercase}
+.fg input,.fg textarea,.fg select{width:100%;padding:10px 12px;border:1.5px solid var(--fog);border-radius:var(--r-sm);font-family:var(--font-b);font-size:.875rem;color:var(--ink);background:var(--snow);transition:border-color var(--tr),box-shadow var(--tr)}
+.fg input:focus,.fg textarea:focus,.fg select:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(13,148,136,.1);background:var(--white)}
+.fg textarea{resize:vertical;min-height:124px}
+.btn-sub{width:100%;padding:12px;background:var(--slate);color:var(--white);border:none;border-radius:var(--r-sm);font-family:var(--font-b);font-size:.875rem;font-weight:600;cursor:pointer;transition:background var(--tr),transform var(--tr);letter-spacing:.04em;text-transform:uppercase}
+.btn-sub:hover{background:var(--teal);transform:translateY(-1px)}
+
+/* ── FOOTER ── */
+footer{background:var(--slate);color:rgba(255,255,255,.65);padding:48px 0 24px}
+.ft-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px;margin-bottom:36px}
+.ft-abbr{font-family:var(--font-d);font-size:1.3rem;font-weight:700;color:var(--white)}
+.ft-full{font-family:var(--font-m);font-size:.6rem;color:var(--teal-light);font-weight:500;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+.ft-brand p{margin-top:14px;font-size:.82rem;line-height:1.75;color:rgba(255,255,255,.45)}
+.ft-col h4{font-family:var(--font-m);font-size:.7rem;font-weight:500;color:var(--teal-light);margin-bottom:14px;text-transform:uppercase;letter-spacing:.1em}
+.ft-links{list-style:none}
+.ft-links li{margin-bottom:8px}
+.ft-links a{font-size:.82rem;color:rgba(255,255,255,.45);cursor:pointer;transition:color var(--tr)}
+.ft-links a:hover{color:var(--teal-light)}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.ft-bottom p{font-size:.78rem;color:rgba(255,255,255,.3)}
+.ft-badge{font-family:var(--font-m);font-size:.72rem;color:rgba(255,255,255,.28)}
+
+/* ── MODAL ── */
+.spec-modal{display:none;position:fixed;inset:0;z-index:2000;align-items:center;justify-content:center}
+.spec-modal.show{display:flex}
+.spec-modal-backdrop{position:absolute;inset:0;background:rgba(13,27,42,.65);backdrop-filter:blur(5px)}
+.spec-modal-content{position:relative;background:var(--white);padding:28px;border-radius:var(--r-lg);max-width:500px;width:92%;box-shadow:var(--sh-lg);z-index:2;max-height:80vh;overflow-y:auto;border-top:3px solid var(--teal);animation:modalIn .3s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+.spec-modal-close{position:absolute;right:14px;top:12px;background:var(--snow);border:1px solid var(--fog);border-radius:var(--r-sm);width:28px;height:28px;display:flex;align-items:center;justify-content:center;font-size:.9rem;cursor:pointer;color:var(--slate);transition:background var(--tr)}
+.spec-modal-close:hover{background:var(--fog)}
+.spec-modal-title{font-family:var(--font-b);font-size:1.05rem;font-weight:700;color:var(--slate);margin-bottom:16px;padding-right:28px;letter-spacing:.01em}
+.spec-modal-list dt{font-family:var(--font-m);font-weight:500;color:var(--teal-dim);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;margin-top:10px}
+.spec-modal-list dd{margin:2px 0 0 0;font-size:.875rem;color:var(--ink)}
+
+/* ── COUNTER ANIMATION ── */
+.count-up{display:inline-block}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){.about-grid{grid-template-columns:1fr;gap:30px}.ct-layout{grid-template-columns:1fr}.ft-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){
+  .mob-toggle{display:flex;align-items:center;justify-content:center}
+  nav{display:none;position:absolute;top:66px;left:0;right:0;background:rgba(248,250,252,.98);border-bottom:1px solid var(--fog);box-shadow:var(--sh-md);z-index:999}
+  nav.active{display:block}
+  nav ul{flex-direction:column;padding:12px 18px;gap:2px}
+  .hero-stats{flex-direction:column;gap:16px}
+  .h-stat{border-right:none;padding:0;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:16px}
+  .h-stat:last-child{border-bottom:none;padding-bottom:0}
+  .form-row{grid-template-columns:1fr}
+  .ft-grid{grid-template-columns:1fr}
+  .pillars{grid-template-columns:1fr}
+}
+@media(max-width:480px){.container{padding:0 16px}#home{padding:72px 0 36px}}
+
+/* Global font enlargement */
+.sec-head p,.about-text p,.ra-card p,.proj-card p,.svc-card p,.pub p,.news-item p,.aly-card p,.mem-focus,.ct-block p{
+  font-size:1rem !important;
+}
+.mem-name,.aly-card h3,.pub h4,.news-item h3,.svc-card h3,.ra-card h3{
+  font-size:1.05rem !important;
+}
+nav a{
+  font-size:0.95rem !important;
+}
+
+/* Modern visual additions */
+.highlights-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin:40px 0}
+.highlight-box{background:#fff;border:1px solid var(--fog);border-radius:12px;padding:18px;text-align:center;box-shadow:var(--sh-sm)}
+.highlight-box strong{display:block;font-size:2rem;color:var(--teal)}
+.visual-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:24px 0 40px}
+.visual-card{background:#fff;border:1px solid var(--fog);border-radius:12px;overflow:hidden}
+.visual-card img{width:100%;height:180px;object-fit:cover}
+.visual-card div{padding:10px;font-size:.85rem;font-weight:600}
+.featured-panel{display:grid;grid-template-columns:420px 1fr;gap:20px;background:#fff;border:1px solid var(--fog);border-radius:12px;padding:20px;margin-bottom:24px}
+.featured-panel img{width:100%;height:auto;max-height:320px;object-fit:contain;object-position:center;border-radius:10px;background:#ffffff}
+@media(max-width:768px){.highlights-grid{grid-template-columns:1fr 1fr}.featured-panel{grid-template-columns:1fr}}
+
+
+.research-actions-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:20px}
+.research-action-card{background:#fff;border-radius:12px;overflow:hidden;cursor:pointer;border:1px solid #e2e8f0}
+.research-action-card img{width:100%;height:180px;object-fit:cover}
+.research-action-card h3{padding:12px;font-size:1rem}
+.gallery-modal{display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,.92);z-index:999999;padding:40px;overflow:auto}
+.gallery-modal.show{display:block !important}
+.gallery-content{
+max-width:1000px;
+margin:140px auto 60px auto;
+position:relative;
+animation:gallerySlide .35s ease;
+}
+
+@keyframes gallerySlide{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:none;}
+}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
+.gallery-grid img,.gallery-grid video{width:100%;height:300px;object-fit:cover;border-radius:10px;display:block}
+.gallery-close{color:#fff;font-size:32px;cursor:pointer;float:right}
+
+
+.research-action-title{
+    text-align:center;
+    color:white;
+    margin-top:100px;
+    margin-bottom:35px;
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing:0.5px;
+}
+.research-actions-row{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    max-width:1400px;
+    margin:0 auto;
+}
+
+
+.hero-eyebrow img{
+    width:180px;
+    height:110px;
+    object-fit:contain;
+    flex-shrink:0;
+}
+
+.hero-eyebrow a:hover{
+    text-decoration:underline;
+}
+
+
+/* ===== Enhanced Scientific Background ===== */
+#about,#research,#professional-service,#publications,#members,#alumni,#news,#contact{
+ position:relative;overflow:hidden;
+}
+#about::before,#research::before,#professional-service::before,#publications::before,
+#members::before,#alumni::before,#news::before,#contact::before{
+ content:'';
+ position:absolute;
+ inset:0;
+ pointer-events:none;
+ background:
+ radial-gradient(circle at 20% 30%, rgba(13,148,136,.18) 0, transparent 180px),
+ radial-gradient(circle at 80% 20%, rgba(20,184,166,.15) 0, transparent 220px),
+ radial-gradient(circle at 70% 80%, rgba(44,82,130,.12) 0, transparent 240px),
+ radial-gradient(circle at 30% 70%, rgba(13,148,136,.10) 0, transparent 180px);
+ animation:floatingBackground 20s ease-in-out infinite alternate;
+}
+#about::after,#research::after,#professional-service::after,#publications::after,
+#members::after,#alumni::after,#news::after,#contact::after{
+ content:'';
+ position:absolute;
+ inset:0;
+ pointer-events:none;
+ background-image:
+ linear-gradient(rgba(13,148,136,.05) 1px, transparent 1px),
+ linear-gradient(90deg, rgba(13,148,136,.05) 1px, transparent 1px);
+ background-size:80px 80px;
+ animation:gridDrift 40s linear infinite;
+}
+.container{position:relative;z-index:5;}
+@keyframes floatingBackground{
+ 0%{transform:translate(0,0) scale(1);}
+ 50%{transform:translate(-30px,-20px) scale(1.08);}
+ 100%{transform:translate(20px,15px) scale(1.12);}
+}
+@keyframes gridDrift{
+ from{transform:translate(0,0);}
+ to{transform:translate(-80px,-80px);}
+}
+
+
+/* Home page centered layout */
+.hero-inner{
+    text-align:center !important;
+    max-width:1000px;
+    margin:0 auto;
+}
+.hero-inner h1{
+    margin-left:auto;
+    margin-right:auto;
+}
+.hero-sub{
+    margin-left:auto !important;
+    margin-right:auto !important;
+    text-align:center !important;
+}
+.hero-actions{
+    justify-content:center !important;
+}
+.hero-stats{
+    justify-content:center !important;
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.hero-eyebrow{
+    margin-left:auto !important;
+    margin-right:auto !important;
+}
+.research-action-title{
+    text-align:center !important;
+}
+
+
+/* ===== Requested alignment refinements ===== */
+
+/* Research in Action */
+.research-action-title{
+    text-align:center !important;
+}
+.research-actions-row{
+    max-width:1400px !important;
+    margin:0 auto !important;
+    justify-content:center !important;
+}
+.research-action-card h3{
+    text-align:center !important;
+}
+
+/* About section domains */
+.pillar h4{
+    text-align:center !important;
+}
+.pillars{
+    justify-content:center !important;
+}
+
+/* PI box compact layout */
+.pi-box{
+    display:inline-flex !important;
+    width:auto !important;
+    max-width:520px !important;
+    padding:14px 18px !important;
+}
+
+/* Member category headings */
+.mem-cat{
+    text-align:center !important;
+    font-size:1rem !important;
+    font-weight:700 !important;
+    letter-spacing:.15em !important;
+    margin:50px 0 24px !important;
+    color:var(--teal) !important;
+}
+
+
+/* Center PI box under About text */
+.about-text{
+    display:flex;
+    flex-direction:column;
+}
+.about-text .pi-box{
+    margin-left:auto !important;
+    margin-right:auto !important;
+    align-self:center !important;
+}
+
+
+/* ARMEL Floating Orbital Gallery */
+.floating-gallery{position:absolute;right:2%;top:50%;width:520px;height:520px;transform:translateY(-50%);z-index:1;pointer-events:none;opacity:.78;animation:floatingLab 8s ease-in-out infinite}
+.floating-gallery::before{content:'';position:absolute;inset:70px;border-radius:50%;background:radial-gradient(circle,rgba(20,184,166,.35) 0%,rgba(20,184,166,.15) 40%,transparent 75%);filter:blur(35px)}
+.gallery-orbit{position:relative;width:100%;height:100%;animation:orbitRotate 120s linear infinite}
+.gallery-orbit img{position:absolute;width:150px;height:150px;object-fit:cover;border-radius:50%;border:4px solid rgba(255,255,255,.15);box-shadow:0 10px 30px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.08);animation:counterOrbit 120s linear infinite;opacity:.95;transition:all .6s ease}
+.gallery-orbit img:nth-child(1){top:0;left:185px;}
+.gallery-orbit img:nth-child(2){top:92px;right:25px;}
+.gallery-orbit img:nth-child(3){bottom:92px;right:25px;}
+.gallery-orbit img:nth-child(4){bottom:0;left:185px;}
+.gallery-orbit img:nth-child(5){bottom:92px;left:25px;}
+.gallery-orbit img:nth-child(6){top:92px;left:25px;}
+.gallery-center{position:absolute;left:50%;top:50%;width:180px;height:180px;transform:translate(-50%,-50%);border-radius:50%;overflow:hidden;border:5px solid rgba(20,184,166,.45);box-shadow:0 0 40px rgba(20,184,166,.25),0 0 80px rgba(20,184,166,.15)}
+.gallery-center img{width:100%;height:100%;object-fit:cover}
+@keyframes orbitRotate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes counterOrbit{from{transform:rotate(0deg)}to{transform:rotate(-360deg)}}
+@keyframes floatingLab{0%{transform:translateY(-50%) translateX(0)}50%{transform:translateY(-53%) translateX(-10px)}100%{transform:translateY(-50%) translateX(0)}}
+
+
+/* ===== Dense Floating Background Galleries ===== */
+.section:not(#home){position:relative;overflow:hidden;}
+.section-floating-gallery{
+ position:absolute;
+ inset:0;
+ overflow:hidden;
+ pointer-events:none;
+ z-index:1;
+}
+.float-row{
+ position:absolute;
+ display:flex;
+ gap:50px;
+ width:max-content;
+}
+.float-row img{
+ object-fit:cover;
+ box-shadow:0 20px 60px rgba(0,0,0,.18);
+ filter:blur(1px);
+}
+.float-row img:nth-child(odd){border-radius:50%;}
+.float-row img:nth-child(even){border-radius:30px;}
+
+.float-row img:nth-child(3n){
+ width:320px;height:320px;opacity:.18;
+}
+.float-row img:nth-child(3n+1){
+ width:260px;height:260px;opacity:.14;
+}
+.float-row img:nth-child(3n+2){
+ width:220px;height:220px;opacity:.10;
+}
+
+.row1{top:0%;animation:floatLeft 120s linear infinite;}
+.row2{top:100%;animation:floatRight 95s linear infinite;}
+.row3{top:33.33%;animation:floatLeft 140s linear infinite;}
+.row4{top:66.66%;animation:floatRight 110s linear infinite;}
+.row5{top:80%;animation:floatLeft 160s linear infinite;}
+
+.row6{top:100%;animation:floatRight 170s linear infinite;}
+
+@keyframes floatLeft{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@keyframes floatRight{from{transform:translateX(-50%);}to{transform:translateX(0);}}
+
+.section .container{position:relative;z-index:5;}
+
+
+/* Exact section row spacing */
+#about .row1,#news .row1,#contact .row1{top:0%!important;}
+#about .row2,#news .row2,#contact .row2{top:100%!important;}
+
+#research .row1,#professional-service .row1,#members .row1,#alumni .row1{top:0%!important;}
+#research .row2,#professional-service .row2,#members .row2,#alumni .row2{top:33.33%!important;}
+#research .row3,#professional-service .row3,#members .row3,#alumni .row3{top:66.66%!important;}
+#research .row4,#professional-service .row4,#members .row4,#alumni .row4{top:100%!important;}
+
+#publications .row1{top:0%!important;}
+#publications .row2{top:20%!important;}
+#publications .row3{top:40%!important;}
+#publications .row4{top:60%!important;}
+#publications .row5{top:80%!important;}
+#publications .row6{top:100%!important;}
+
+
+/* Short sections: smaller images + guaranteed two visible rows */
+#about .float-row img,
+#news .float-row img,
+#contact .float-row img{
+    width:160px !important;
+    height:160px !important;
+}
+
+#about .row1,
+#news .row1,
+#contact .row1{
+    top:20% !important;
+}
+
+#about .row2,
+#news .row2,
+#contact .row2{
+    top:70% !important;
+}
+
+
+/* Lower first rows so they don't sit behind section headings */
+
+/* 4-row sections */
+#research .row1,
+#professional-service .row1,
+#members .row1,
+#alumni .row1{
+    top:5% !important;
+}
+
+#research .row2,
+#professional-service .row2,
+#members .row2,
+#alumni .row2{
+    top:35% !important;
+}
+
+#research .row3,
+#professional-service .row3,
+#members .row3,
+#alumni .row3{
+    top:62% !important;
+}
+
+#research .row4,
+#professional-service .row4,
+#members .row4,
+#alumni .row4{
+    top:89% !important;
+}
+
+#publications .row1{top:4% !important;}
+#publications .row2{top:24% !important;}
+#publications .row3{top:41% !important;}
+#publications .row4{top:58% !important;}
+#publications .row5{top:75% !important;}
+#publications .row6{top:92% !important;}
+
+
+/* Optional media support for News items */
+
+.news-item{
+    overflow:visible;
+}
+
+.news-media{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:15px;
+    overflow:visible;
+}
+
+.news-media img{
+    width:260px;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    border:1px solid #e2e8f0;
+    transition:transform .4s ease;
+    transform:scale(1);
+    position:relative;
+    z-index:1;
+}
+
+.news-media img:hover{
+    transform:scale(1.5);
+    z-index:1000;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.news-media video{
+    width:320px;
+    max-width:100%;
+    border-radius:8px;
+}
+
+
+
+
+
+/* Research in Action hover zoom without cropping */
+.research-action-card img{
+    transition: all 0.3s ease;
+}
+
+.research-action-card img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    position: relative;
+    z-index: 100;
+}
+
+.research-action-card{
+    overflow: visible !important;
+}
+
+
+/* True no-crop hover effect for Research in Action */
+.research-action-card{
+    overflow:visible !important;
+    position:relative;
+    z-index:1;
+}
+
+.research-action-card img{
+    object-fit:contain !important;
+    transition:transform .35s ease, box-shadow .35s ease;
+}
+
+.research-action-card:hover{
+    z-index:999;
+}
+
+.research-action-card:hover img{
+    transform:scale(1.25);
+    box-shadow:0 15px 35px rgba(0,0,0,.30);
+}
+
+
+
+/* Performance optimization */
+#about,#research,#professional-service,#publications,#members,#alumni,#news,#contact{position:relative;overflow:hidden;}
+#about::before,#research::before,#professional-service::before,#publications::before,#members::before,#alumni::before,#news::before,#contact::before{
+content:'';position:absolute;inset:0;pointer-events:none;
+background:radial-gradient(circle at 20% 20%, rgba(13,148,136,.08), transparent 30%),
+radial-gradient(circle at 80% 70%, rgba(44,82,130,.08), transparent 30%);
+}
+.container{position:relative;z-index:2;}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo" onclick="showSection('home')" role="button" tabindex="0">
+      <div class="logo-mark">
+        <img src="images/logo.png" alt="ARMEL Logo" decoding="async" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div>
+        <div class="logo-abbr">ARMEL</div>
+        <div class="logo-full">IIT Bhubaneswar</div>
+      </div>
+    </div>
+    <button class="mob-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">&#9776;</button>
+    <nav id="nav">
+      <ul>
+        <li><a onclick="showSection('home')">Home</a></li>
+        <li><a onclick="showSection('about')">About</a></li>
+        <li><a onclick="showSection('research')">Research</a></li>
+        <li><a onclick="showSection('professional-service')">Services</a></li>
+        <li><a onclick="showSection('publications')">Publications</a></li>
+        <li><a onclick="showSection('members')">Members</a></li>
+        <li><a onclick="showSection('alumni')">Alumni</a></li>
+        <li><a onclick="showSection('news')">News</a></li>
+        <li><a onclick="showSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="section active">
+<canvas id="hero-canvas"></canvas>
+
+<div class="floating-gallery">
+    <div class="gallery-orbit">
+        <img src="images/hero_gallery/lab1.jpg" alt="">
+        <img src="images/hero_gallery/lab2.jpg" alt="">
+        <img src="images/hero_gallery/lab3.jpg" alt="">
+        <img src="images/hero_gallery/lab4.jpg" alt="">
+        <img src="images/hero_gallery/lab5.jpg" alt="">
+        <img src="images/hero_gallery/lab6.jpg" alt="">
+      <div class="gallery-center">
+          <img src="images/hero_gallery/ARMEL.jpg" alt="ARMEL Logo">
+      </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">
+<a href="https://seocs.iitbbs.ac.in/"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;">
+
+    <img src="images/logo_SEOCS.png"
+         alt="SEOCS Logo">
+
+    <span>
+        School of Earth, Ocean &amp; Climate Sciences
+    </span>
+
+</a>
+</div>
+    <h1>Applied Rock Mechanics<br>&amp; <em>Energy Laboratory</em></h1>
+    <p class="hero-sub">Advancing the frontiers of rock mechanics, geological carbon sequestration, and energy geoscience through rigorous experimental and computational research at IIT Bhubaneswar.</p>
+    <div class="hero-actions">
+      <button class="btn-p" onclick="showSection('research')">Explore Research</button>
+      <button class="btn-o" onclick="showSection('contact')">Get in Touch</button>
+    </div>
+    <div class="hero-stats">
+      <div class="h-stat"><div class="h-stat-n">20+</div><div class="h-stat-l">Publications</div></div>
+      <div class="h-stat"><div class="h-stat-n">2</div><div class="h-stat-l">Active Projects</div></div>
+      <div class="h-stat"><div class="h-stat-n">9</div><div class="h-stat-l">Active Members</div></div>
+      <div class="h-stat"><div class="h-stat-n">8</div><div class="h-stat-l">Alumni</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+<h2 class="research-action-title">Research in Action</h2>
+
+<div class="research-actions-row">
+
+<div class="research-action-card" onclick="openResearchGallery('field')">
+<img src="images/research_action/field.jpg">
+<h3>Field Investigation</h3>
+</div>
+
+<div class="research-action-card" onclick="openResearchGallery('lab')">
+<img src="images/research_action/lab.jpg">
+<h3>Laboratory Testing</h3>
+</div>
+
+<div class="research-action-card" onclick="openResearchGallery('carbon')">
+<img src="images/research_action/ccs.jpg">
+<h3>Carbon Storage Research</h3>
+</div>
+
+<div class="research-action-card" onclick="openResearchGallery('digital')">
+<img src="images/research_action/drp.jpg">
+<h3>Digital Rock Physics</h3>
+</div>
+
+<div class="research-action-card" onclick="openResearchGallery('coal')">
+<img src="images/research_action/coal.jpg">
+<h3>Applied Rock Mechanics for Coal Technology</h3>
+</div>
+
+<div class="research-action-card" onclick="openResearchGallery('slope')">
+<img src="images/research_action/slope.jpg">
+<h3>Slope Stability Assessment</h3>
+</div>
+
+</div>
+
+<div id="researchGallery" class="gallery-modal" onclick="closeResearchGallery()">
+
+<div class="gallery-content" onclick="event.stopPropagation()">
+<div id="galleryGrid" class="gallery-grid"></div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<div class="section-floating-gallery"><div class="float-row row1"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div>
+<div class="float-row row2"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div></div>
+
+<div class="container sec-pad">
+  <div class="about-grid">
+    <div class="about-text">
+      <h2>Where <span>Rock Mechanics</span> meets the Energy Challenge</h2>
+      <p>The Applied Rock Mechanics and Energy Laboratory (ARMEL) at IIT Bhubaneswar is a research group dedicated to advancing the understanding of rock behaviour in the context of energy production, geological storage, and geohazard mitigation.</p>
+      <p>Our interdisciplinary approach combines experimental rock physics, advanced imaging (micro-CT, SEM), acoustic emission monitoring, and numerical modelling to address real-world engineering and environmental challenges.</p>
+      <div class="pi-box">
+        <img loading="eager" decoding="async" class="pi-photo" src="images/Active Members/Bankim.png" alt="Dr. Bankim Chandra Mahanta" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="pi-fb" style="display:none">BCM</div>
+        <div class="pi-info">
+          <strong>Dr. Bankim Chandra Mahanta</strong>
+          <span>Principal Investigator &amp; Lab Head</span><br>
+          <a href="https://scholar.google.com/citations?user=bkOVAsYAAAAJ&hl=en" target="_blank" rel="noopener" style="margin-left:6px">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/applied-rock-mechanics-and-energy-laboratory-iit-bhubaneswar-470791358/" target="_blank" rel="noopener" style="margin-left:6px">LinkedIn &#8599;</a>
+        </div>
+      </div>
+    </div>
+    <div class="pillars">
+      <div class="pillar"><div class="p-icon">&#128300;</div><h4>Rock Mechanics &amp; Fracture</h4><p>Mechanical behaviour, fracture toughness, acoustic emission, and failure mechanisms under complex loading.</p></div>
+      <div class="pillar"><div class="p-icon">&#127758;</div><h4>Carbon Sequestration</h4><p>CO<sub>2</sub> storage in basalt and coalfields, carbonate mineralisation, and reservoir characterisation.</p></div>
+      <div class="pillar"><div class="p-icon">&#128738;</div><h4>Energy Geoscience</h4><p>Enhanced coalbed methane, shale gas, hydrocarbon reservoir modelling, and unconventional energy.</p></div>
+      <div class="pillar"><div class="p-icon">&#127956;</div><h4>Geohazards</h4><p>Slope stability analysis, induced seismicity, and geotechnical characterisation for infrastructure safety.</p></div>
+      <div class="pillar"><div class="p-icon">&#128301;</div><h4>Digital Rock Physics</h4><p>High-resolution micro-CT imaging, pore-network modelling, and image-based rock analysis.</p></div>
+      <div class="pillar"><div class="p-icon">&#127777;</div><h4>Thermal &amp; Fluid Effects</h4><p>Temperature-induced deformation, fluid&#8211;rock interaction, and thermo-hydro-mechanical coupling.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" class="section" style="background:var(--white)">
+<div class="section-floating-gallery"><div class="float-row row1"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div><div class="float-row row2"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div><div class="float-row row3"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div><div class="float-row row4"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div></div>
+
+<div class="container sec-pad">
+  <div class="sec-head"><h2>Research</h2><div class="divider"></div><p>Experimental, numerical, and field-based investigations across rock mechanics, energy geoscience, and geo-environmental engineering.</p></div>
+
+  <div class="sub-title">Core Research Areas</div>
+  <div class="ra-grid">
+    <div class="ra-card"><div class="ra-num">01</div><h3>Rock Mechanics &amp; Fracture</h3><p>Fracture toughness, acoustic emission monitoring, and failure mechanisms of rocks under uniaxial, triaxial, and dynamic loading, relevant to underground excavation and mining.</p></div>
+    <div class="ra-card"><div class="ra-num">02</div><h3>Geological Carbon Sequestration</h3><p>CO<sub>2</sub> storage in basalt and coal formations, cryogenic fracturing with liquid nitrogen, carbonate mineralisation, and long-term reservoir characterisation.</p></div>
+    <div class="ra-card"><div class="ra-num">03</div><h3>Unconventional Energy Resources</h3><p>Enhanced coalbed methane (ECBM), shale gas, and CO<sub>2</sub>-EOR. Experimental and numerical evaluation of adsorption behaviour and formation properties.</p></div>
+    <div class="ra-card"><div class="ra-num">04</div><h3>Digital Rock Physics &amp; Micro-CT</h3><p>High-resolution X-ray micro-CT imaging and digital rock modelling to characterise pore networks, micro-fractures, and reservoir properties.</p></div>
+    <div class="ra-card"><div class="ra-num">05</div><h3>Thermal &amp; Fluid&#8211;Rock Interaction</h3><p>Effects of elevated temperature and brine saturation on rock strength, deformation, and microstructure. Implications for geothermal and CCS applications.</p></div>
+    <div class="ra-card"><div class="ra-num">06</div><h3>Geohazard &amp; Slope Stability</h3><p>Field investigation, hazard zonation, and numerical modelling of slope failures along highways and railway corridors. Geotechnical characterisation for infrastructure safety.</p></div>
+  </div>
+
+  <div class="sub-title">Experimental Facilities</div>
+  <div class="fac-grid">
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/lpga.jpg" alt="High Vacuum Physisorption Analyzer: Autosorb" data-spec="Sampling Stations: For Microporus samples; Measurement range: Surface area: 0.01 m<sup>2</sup>/g and above with (N,<sub>2</sub>), and Pore Diameter Range: 0.35- 500 nm or better.; Model: Autosorb 6100; Manufacturer: Anton Parr; Year: 2026; Notes: Gas sorption isotherm, BET specific surface area." onerror="this.style.display='none'">
+      <h3>Low-pressure gas adsorption Analyser</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/triaxial_core_holder.jpg" alt="Triaxial Core Holder" data-spec=" Core Diameter: 1.5 inch, Core Length: Minimum 1 inch (25.4 mm), Maximum 4 inch (101.6 mm), Maximum Confining Pressure: 10,000 psi, Maximum Axial Pressure: 10,000 psi, and Maximum Operating Temperature: 150 °C;Type: Triaxial Core Holder; Manufacturer: DCAM Engineering; Year: 2026; Notes: For high-pressure and high-temperature experiments to evaluate rock–fluid interaction." onerror="this.style.display='none'">
+      <h3>Triaxial Core Holder</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/CTM_2000.jpg" alt="Compression Testing Machine (2000 kN)" data-spec="Capacity: 2000 kN; Type: Compression Testing Machine; Manufacturer: UTest; Year: 2023; Notes: Compression machine for uniaxial and triaxial tests." onerror="this.style.display='none'">
+      <h3>Compression Testing Machine (2000 kN)</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/CTM_500.jpg" alt="Compression Testing Machine (500 kN)" data-spec="Capacity: 500 kN; Type: Compression Testing Machine; Model: CTM-500; Manufacturer: Aimil; Year: 2025; Notes: Compression machine for uniaxial and triaxial tests." onerror="this.style.display='none'">
+      <h3>Compression Testing Machine (500 kN)</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/Acoustic Emission.jpg" alt="Acoustic Emission Setup (2 Channel)" data-spec="Channels: 2; Type: Acoustic Emission monitoring system; Sensor: Piezoelectric; Model: AE-2; Notes: Real-time AE detection for fracture monitoring." onerror="this.style.display='none'">
+      <h3>Acoustic Emission Setup (2 Channel)</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/Autoclave reactor.jpg" alt="300 ml Autoclave Reactor" data-spec="Volume: 300 ml; Type: Autoclave reactor; Pressure rating: up to 100 bar; Max temp: up to 300&#176;C; Notes: High-pressure, temperature-controlled reactor for geochemical experiments." onerror="this.style.display='none'">
+      <h3>300 ml Autoclave Reactor</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/DCAM_Reactor _ 100ml.jpg" alt="High-Pressure Bottom Magnetic Strirring Reactor _ 100ml" data-spec="Volume: 100 ml; Type: Bottom magnetic stirring reactor; Pressure rating: up to 200 bar; Max temp: up to 300&#176;C; Notes: High-pressure, temperature-controlled reactor for geochemical experiments." onerror="this.style.display='none'">
+      <h3>100 ml High-Pressure Magnetic Stirring Reactor</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/DCAM_Reactor _ 300ml.jpg" alt="High-Pressure Bottom Magnetic Strirring Reactor _ 300ml" data-spec="Volume: 300 ml; Type: Bottom magnetic stirring reactor; Pressure rating: up to 200 bar; Max temp: up to 300&#176;C; Notes: High-pressure, temperature-controlled reactor for geochemical experiments." onerror="this.style.display='none'">
+      <h3>300 ml High-Pressure Magnetic Stirring Reactor</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/DCAM_Reactor _ 500ml.jpg" alt="High-Pressure Bottom Magnetic Strirring Reactor _ 500ml" data-spec="Volume: 500 ml; Type: Bottom magnetic stirring reactor; Pressure rating: up to 200 bar; Max temp: up to 300&#176;C; Notes: High-pressure, temperature-controlled reactor for geochemical experiments." onerror="this.style.display='none'">
+      <h3>500 ml High-Pressure Magnetic Stirring Reactor</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/Hoek Cell.jpg" alt="Hoek Cell" data-spec="Type: Hoek triaxial cell; Max confining pressure: 70 MPa; Compatible with CTMs; Notes: Used for triaxial and confinement experiments." onerror="this.style.display='none'">
+      <h3>Hoek Cell</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/Load cell.jpg" alt="Load Cell" data-spec="Capacity: 100 kN; Type: Load cell; Model: LC-100; Notes: High-accuracy force transducer for mechanical tests." onerror="this.style.display='none'">
+      <h3>Load Cell</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/Data logger.jpg" alt="Data Logger" data-spec="Channels: 8 (expandable); Type: Data logger; Sampling rate: up to 100 kHz; Notes: Multi-channel acquisition for sensors." onerror="this.style.display='none'">
+      <h3>Data Logger</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/Desiccator and vacuum pump.jpg" alt="Desiccator &amp; Vacuum Pump" data-spec="Type: Desiccator + Vacuum Pump; Vacuum level: down to ~10 mbar; Notes: Sample drying and vacuum-assisted experiments." onerror="this.style.display='none'">
+      <h3>Desiccator &amp; Vacuum Pump</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/Casagrande apparatus.jpg" alt="Casagrande Apparatus" data-spec="Type: Casagrande Apparatus; Use: Atterberg limits testing; Notes: Standard device for liquid and plastic limit determinations." onerror="this.style.display='none'">
+      <h3>Casagrande Apparatus</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/Oven.jpg" alt="Laboratory Oven" data-spec="Type: Oven; Use: Sample drying; Temperature range: up to 200&#176;C; Notes: Laboratory drying oven." onerror="this.style.display='none'">
+      <h3>Laboratory Oven</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+    <div class="fac-card">
+      <img class="fac-img" src="images/Research Facilities/Rock coring and cutting.jpg" alt="Rock Coring &amp; Cutting" data-spec="Type: Rock coring and cutting setup; Use: Core extraction and sample preparation; Notes: Standard coring and saw cutting tools." onerror="this.style.display='none'">
+      <h3>Rock Coring &amp; Cutting</h3><div class="fac-hint">Click image for specs</div>
+    </div>
+  </div>
+
+  
+<div class="sub-title">Featured Project</div>
+<div class="featured-panel">
+<img src="images/featured_project/fp1.jpg">
+<div>
+<h3>Geological Carbon Storage in Basalt</h3>
+<p>DST-funded research on CO<sub>2</sub> mineralisation, reservoir characterisation and liquid nitrogen fracturing.</p>
+</div>
+</div>
+
+<div class="sub-title">Current Projects</div>
+  <div class="proj-grid current-projects" style="margin-bottom:44px">
+    <div class="proj-card">
+      <span class="badge badge-a">Active</span>
+      <h3>Geological Carbon Dioxide Storage in Basalt: An Integrated Approach to Understand the Mechanism of Carbon Mineralisation and Applicability of Liquid Nitrogen Fracturing</h3>
+      <p class="proj-meta"><strong>Funding Agency:</strong> Department of Science and Technology</p>
+      <p class="proj-meta"><strong>Duration:</strong> 2025&#8211;2028 &nbsp;|&nbsp; <strong>Type:</strong> Research</p>
+      <p>Developing and validating CO<sub>2</sub> storage in basalt formations through experimental investigation of mineralisation kinetics and cryogenic fracturing techniques for enhanced injectivity.</p>
+    </div>
+    
+  </div>
+
+  <div class="sub-title">Completed Projects</div>
+  <div class="proj-grid completed-projects">
+    <div class="proj-card">
+      <span class="badge badge-c">Completed</span>
+      <h3>AE-Based Investigation into the Fracture Characteristics of Rocks Under Complex Loading and Structural Heterogeneity: Implications for Underground Excavation, Mining and Hydrocarbon Exploration</h3>
+      <p class="proj-meta"><strong>Funding Agency:</strong> IIT Bhubaneswar</p>
+      <p class="proj-meta"><strong>Duration:</strong> 2024&#8211;2026 &nbsp;|&nbsp; <strong>Type:</strong> Research</p>
+      <p>Employing acoustic emission techniques to characterise fracture initiation, propagation, and coalescence under heterogeneous stress states, with implications for safer underground engineering.</p>
+    </div>
+    <div class="proj-card done">
+      <span class="badge badge-c">Completed</span>
+      <h3>Geological, Hydro-Geological, and Geophysical Survey with Slope Stability Analysis for the Angul&#8211;Sukinda Railway Project (88.7&#8211;88.9 km)</h3>
+      <p class="proj-meta"><strong>Funding Agency:</strong> RVNL &nbsp;|&nbsp; <strong>Duration:</strong> Jan&#8211;May 2025 &nbsp;|&nbsp; <strong>Type:</strong> Consultancy</p>
+      <p>Geotechnical site investigation including geological mapping, hydrogeological assessment, geophysical surveys, slope stability analysis, and recommended remedial measures.</p>
+    </div>
+    <div class="proj-card done">
+      <span class="badge badge-c">Completed</span>
+      <h3>Thermo-Hydro-Mechanical Controls and Induced Seismicity During Hydraulic Fracturing and Unconventional Energy Exploration</h3>
+      <p class="proj-meta"><strong>Funding Agency:</strong> DST-SERB &nbsp;|&nbsp; <strong>Duration:</strong> 2022&#8211;2024</p>
+      <p>Experimental and numerical investigation of coupled THM processes during hydraulic fracturing and assessment of induced seismicity risks in unconventional reservoirs.</p>
+    </div>    
+  </div>
+</div>
+</section>
+
+<!-- PROFESSIONAL SERVICE -->
+<section id="professional-service" class="section">
+<div class="section-floating-gallery"><div class="float-row row1"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div><div class="float-row row2"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div><div class="float-row row3"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div><div class="float-row row4"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div></div>
+
+<div class="container sec-pad">
+  <div class="sec-head"><h2>Professional Services</h2><div class="divider"></div><p>Expert consultancy and advisory services drawing on ARMEL&#8217;s experimental capabilities and research expertise.</p></div>
+  <div class="svc-grid">
+    <div class="svc-card">
+      <span class="svc-icon">&#9935;&#65039;</span>
+      <h3>Rock Stability &amp; Failure Risk Assessment</h3>
+      <p>Expert geotechnical investigations, slope stability analysis, and remedial measures for highways, railways, and tunnels. Includes site characterisation, numerical modelling, and failure risk quantification for mining operations.</p>
+      <div class="svc-imgs">
+        <img src="PS_images/ARMEL1.jpg" alt="Field investigation 1" onerror="this.style.display='none'">
+        <img src="PS_images/ARMEL2.jpg" alt="Field investigation 2" onerror="this.style.display='none'">
+        <img src="PS_images/ARMEL3.jpg" alt="Field investigation 3" onerror="this.style.display='none'">
+        <img src="PS_images/ARMEL4.jpg" alt="Field investigation 4" onerror="this.style.display='none'">
+      </div>
+    </div>
+    <div class="svc-card"><span class="svc-icon">&#128293;</span><h3>CBM / Shale Gas Formation Suitability</h3><p>Laboratory and field rock mechanics testing, gas adsorption studies, and geomechanical characterisation of coal seams and shale formations to evaluate suitability for coalbed methane or shale gas extraction. Includes pore structure analysis using micro-CT and low-pressure gas adsorption.</p></div>
+    <div class="svc-card"><span class="svc-icon">&#127807;</span><h3>Site Selection for Geological Carbon Sequestration (CCS)</h3><p>Technical support for CCS projects: reservoir suitability assessment, caprock integrity evaluation, geomechanical CO<sub>2</sub> injection modelling, monitoring framework design, and long-term risk analysis for storage in basalt, saline aquifers, and coal formations.</p></div>
+    <div class="svc-card"><span class="svc-icon">&#128165;</span><h3>Geomechanical Advisory for Induced Rock Fracturing</h3><p>Consultancy on hydraulic fracturing design, fracture propagation modelling, and assessment of induced seismicity hazards. Applicable to unconventional resource extraction, geothermal well stimulation, and waste injection operations.</p></div>
+    <div class="svc-card"><span class="svc-icon">&#127777;&#65039;</span><h3>Geothermal Rock Suitability &amp; Thermal Damage Evaluation</h3><p>Assessment of rock thermal properties, thermally-induced micro-cracking, and mechanical degradation under elevated temperatures. Enables informed site selection and engineering design for geothermal projects and high-temperature underground storage systems.</p></div>
+    <div class="svc-card"><span class="svc-icon">&#128301;</span><h3>Digital Rock Modelling &amp; Image-Based Rock Analysis</h3><p>High-resolution micro-CT scanning, SEM imaging, and digital rock physics modelling to quantify pore networks, mineral distribution, fracture geometry, and permeability. Supports reservoir simulation, well completion optimisation, and CO<sub>2</sub> trapping mechanism studies.</p></div>
+    <div class="svc-card"><span class="svc-icon">&#128208;</span><h3>Adsorption Behaviour Interpretation for Reservoir Screening</h3><p>Characterisation of gas adsorption isotherms (CO<sub>2</sub>, CH<sub>4</sub>, N<sub>2</sub>) in coals and shales using low-pressure volumetric and gravimetric methods. Supports selection of optimal injection strategies for ECBM, shale gas, and CO<sub>2</sub> sequestration projects.</p></div>
+    <div class="svc-card"><span class="svc-icon">&#127981;</span><h3>Coal Quality &amp; Environmental Risk Assessment</h3><p>Geochemical, petrographic, and mechanical characterisation of coal samples for quality evaluation. Includes assessment of environmental risks associated with coal mining, ash disposal, and acid mine drainage.</p></div>
+    <div class="svc-card"><span class="svc-icon">&#9989;</span><h3>Expert Review &amp; Validation of Experimental / Field Data</h3><p>Independent technical review and validation of rock mechanics testing programmes, geotechnical investigation reports, and experimental datasets. Ensures compliance with ISRM and ASTM standards; expert opinions for regulatory submissions or dispute resolution.</p></div>
+    <div class="svc-card"><span class="svc-icon">&#127891;</span><h3>Expert Training, Workshops &amp; Advisory Services</h3><p>Tailored professional training and workshops for industry personnel on rock mechanics, geomechanics, acoustic emission monitoring, digital rock physics, and energy geosciences. Short courses and hands-on laboratory training available on request.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="section" style="background:var(--white)">
+<div class="section-floating-gallery">
+<div class="float-row row1"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div>
+<div class="float-row row2"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div>
+<div class="float-row row3"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div>
+<div class="float-row row4"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div>
+<div class="float-row row5"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div>
+<div class="float-row row6"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div></div>
+
+<div class="container sec-pad">
+  <div class="sec-head"><h2>Publications</h2><div class="divider"></div><p>Peer-reviewed research across rock mechanics, energy geoscience, and geological engineering.</p></div>
+
+  <div class="pub-cat-title">Journal Publications <span class="pub-badge">19 papers</span></div>
+  <ol class="pub-list">
+    <li><div class="pub">
+      <h4>An atlas of geological carbon sequestration potential in CBM-rich coalfields of India</h4>
+      <div class="pub-meta">Vishal, V., Chandra, D., Mahanta, B., Pranay, Koperna, G., Shaswattam, Vani G. D., Hazra, B, Ganguly, S., Das, A, Ahuja, M., Ghosh, S., Singh, T. N.</div>
+      <div class="pub-meta jn">International Journal of Greenhouse Gas Control &bull; 2026 <span class="if-tag">IF: 5.9</span></div>
+      <p>Investigates the carbon sequestration potential in major CBM-rich coalfields.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.ijggc.2026.104700" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Effect of Fluid-Rock Interaction on the Geomechanical Attributes of Sandstones from IB Valley in Odisha, India</h4>
+      <div class="pub-meta">Das, A., Mahanta, B. C., Mohapatra, D., Sahoo, K. C., Vishal, V., Singh, T. N.</div>
+      <div class="pub-meta jn">Journal of Earth System Science &bull; 2025 <span class="if-tag">IF: 1.7</span></div>
+      <p>Investigates how variations in brine salinity and depth-dependent fluid&#8211;rock interactions influence the strength and deformation properties of sandstone formations, with implications for CO<sub>2</sub> geo-sequestration and reservoir stability.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1007/s12040-025-02640-z" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Fracture Toughness of Three Indian Crystalline Rocks: Insights from Acoustic Emission Analysis</h4>
+      <div class="pub-meta">Ansari, T. A., Singh, H. K., Mahanta, B. C., Singh, T. N.</div>
+      <div class="pub-meta jn">Journal of Earth System Science &bull; 2025 <span class="if-tag">IF: 1.7</span></div>
+      <p>Investigates fracture toughness and crack propagation behaviour of three Indian crystalline rocks using acoustic emission analysis to understand their mechanical resistance under stress conditions.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1007/s12040-025-02574-6" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Temperature Effect on the Mechanical Behaviour of Shale: Implication for Shale Gas Production</h4>
+      <div class="pub-meta">Vishal, V., Rizwan, M., Mahanta, B., Pradhan, S. P., Singh, T. N.</div>
+      <div class="pub-meta jn">Geosystems and Geoenvironment &bull; 2022 </div>
+      <p>Demonstrates that temperature significantly alters shale strength and fracture behaviour, with direct implications for shale gas production performance at elevated reservoir temperatures.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.geogeo.2022.100078" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Geomechanical Model Construction to Resolve Field Stress Profile and Reservoir Rock Properties of Jurassic Hugin Formation, Volve Field, North Sea</h4>
+      <div class="pub-meta">Saha, S., Vishal, V., Mahanta, B., Pradhan, S. P., Singh, T. N.</div>
+      <div class="pub-meta jn">Geomechanics and Geophysics for Geo-energy and Geo-Resources &bull; 2022 <span class="if-tag">IF: 4.2</span></div>
+      <p>Develops a geomechanical model to determine in-situ stress distribution and rock properties of the Hugin reservoir, aiding wellbore stability analysis and future field development planning.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1007/s40948-022-00359-5" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Progressive Deformation and Pore Network Attributes of Sandstone at In-Situ Stress States Using Computed Tomography</h4>
+      <div class="pub-meta">Mahanta, B., Vishal, V., Sirdesai, N. N., Ranjith, P. G., Singh, T. N.</div>
+      <div class="pub-meta jn">Engineering Fracture Mechanics &bull; 2021 <span class="if-tag">IF: 6.2</span></div>
+      <p>Shows that increasing stress progressively alters sandstone microfractures and pore networks, influencing its deformation and failure behaviour under reservoir conditions.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.engfracmech.2021.107833" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Temperature-Induced Deformational Responses and Microstructural Alteration of Sandstone</h4>
+      <div class="pub-meta">Mahanta, B., Ranjith, P. G., Vishal, V., Singh, T. N.</div>
+      <div class="pub-meta jn">Journal of Petroleum Science and Engineering &bull; 2020 <span class="if-tag">IF: 4.4</span></div>
+      <p>Demonstrates that increasing temperature significantly degrades sandstone strength and alters microstructure by increasing crack density and porosity, relevant to geothermal and CCS applications.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.petrol.2020.107239" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>An Insight into Pore-Network Models of High-Temperature Heat-Treated Sandstones Using Computed Tomography</h4>
+      <div class="pub-meta">Mahanta, B., Vishal, V., Ranjith, P. G., Singh, T. N.</div>
+      <div class="pub-meta jn">Journal of Natural Gas Science and Engineering &bull; 2020 <span class="if-tag">IF: 6.8</span></div>
+      <p>Analyses how high temperatures alter sandstone microstructures and pore-network characteristics using high-resolution micro-CT imaging, affecting fluid flow behaviour in reservoir rocks.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.jngse.2020.103227" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Effects of Thermal Treatment on Physico-Morphological Properties of Indian Fine-Grained Sandstone</h4>
+      <div class="pub-meta">Sirdesai, N. N., Mahanta, B., Ranjith, P. G., Singh, T. N.</div>
+      <div class="pub-meta jn">Bulletin of Engineering Geology and Environment &bull; 2019 <span class="if-tag">IF: 4.2</span></div>
+      <p>Shows that thermal treatment significantly alters physical, mechanical, and morphological properties of Indian fine-grained sandstone, primarily due to microcracking from heat-induced mineral behaviour.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1007/s10064-017-1149-6" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Interpreting Pore Dimensions in Gas Shales Using a Combination of SEM Imaging, Small Angle Neutron Scattering and Low-Pressure Gas Adsorption</h4>
+      <div class="pub-meta">Vishal, V., Chandra, D., Bahadur, J., Sen, D., Hazra, B., Mahanta, B., Tiwari, D.</div>
+      <div class="pub-meta jn">Energy &amp; Fuels &bull; 2019 <span class="if-tag">IF: 6.0</span></div>
+      <p>Characterises pore size distribution, morphology, and fractal attributes of gas shale samples to better understand how pore structure controls gas storage and flow in shale reservoirs.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1021/acs.energyfuels.9b00442" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Experimental Investigation of the Influence of Strain Rate on Strength, Failure Attributes and Mechanism of Jhiri Shale</h4>
+      <div class="pub-meta">Mahanta, B., Singh, T. N., Ranjith, P. G., Vishal, V.</div>
+      <div class="pub-meta jn">Journal of Natural Gas Science and Engineering &bull; 2018 <span class="if-tag">IF: 6.8</span></div>
+      <p>Finds that increasing strain rate significantly raises compressive strength, tensile strength, Young&#8217;s modulus, and fracture toughness of Jhiri shale, demonstrating strong strain-rate dependence.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.jngse.2018.08.001" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Geologic Sequestration of Anthropogenic CO<sub>2</sub> for Enhanced Coalbed Methane Recovery in Jharia Coalfields, India</h4>
+      <div class="pub-meta">Vishal, V., Mahanta, B., Pradhan, S. P., Singh, T. N., Ranjith, P. G.</div>
+      <div class="pub-meta jn">Energy &bull; 2018 <span class="if-tag">IF: 10.1</span></div>
+      <p>Uses numerical simulation to show that CO<sub>2</sub> injection into Jharia coalfields significantly enhances methane recovery, highlighting adsorption behaviour and production performance during CO<sub>2</sub>-ECBM operations.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.energy.2018.06.104" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>The Effect of Lineation on Anisotropy in Dry and Saturated Himalayan Schistose Rock Under Brazilian Test Conditions</h4>
+      <div class="pub-meta">Kundu, J., Mahanta, B., Sarkar, K., Singh, T. N.</div>
+      <div class="pub-meta jn">Rock Mechanics and Rock Engineering &bull; 2018 <span class="if-tag">IF: 6.6</span></div>
+      <p>Demonstrates that lineation orientation significantly influences the tensile strength and anisotropic fracture behaviour of dry and water-saturated Himalayan schistose rock.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1007/s00603-017-1300-5" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Effects of Strain Rate on Fracture Toughness and Energy Release Rate of Gas Shales</h4>
+      <div class="pub-meta">Mahanta, B., Tripathy, A., Vishal, V., Singh, T. N., Ranjith, P. G.</div>
+      <div class="pub-meta jn">Engineering Geology &bull; 2017 <span class="if-tag">IF: 10.3</span></div>
+      <p>Experimentally shows that fracture toughness and energy-release rate of gas shales increase with higher strain rates, and that Mode I fractures require the least energy for crack propagation.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.enggeo.2016.12.008" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Indirect Estimation of Compressive and Shear Strength from Simple Index Tests</h4>
+      <div class="pub-meta">Singh, P. K., Tripathy, A., Kainthola, A., Mahanta, B., Singh, V., Singh, T. N.</div>
+      <div class="pub-meta jn">Engineering with Computers &bull; 2017 <span class="if-tag">IF: 4.9</span></div>
+      <p>Develops empirical correlations between simple index tests and rock strength parameters, enabling indirect estimation without extensive laboratory testing.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1007/s00366-016-0451-4" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Assessment of Dynamic Material Properties of Intact Rocks Using Seismic Wave Attenuation: An Experimental Study</h4>
+      <div class="pub-meta">Wanniarachchi, W. A. M., Ranjith, P. G., Perera, M. S. A., Rathnaweera, T. D., Lyu, Q., Mahanta, B.</div>
+      <div class="pub-meta jn">Royal Society Open Science &bull; 2017 <span class="if-tag">IF: 3</span></div>
+      <p>Shows that seismic wave attenuation measurements can non-destructively assess dynamic elastic and mechanical properties of intact rocks.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1098/rsos.170896" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Influence of Thermal Treatment on Mode I Fracture Toughness of Certain Indian Rocks</h4>
+      <div class="pub-meta">Mahanta, B., Singh, T. N., Ranjith, P. G.</div>
+      <div class="pub-meta jn">Engineering Geology &bull; 2016 <span class="if-tag">IF: 10.3</span></div>
+      <p>Experimentally demonstrates that both temperature and water content significantly reduce mechanical strength and stiffness of rocks, leading to weakened failure behaviour.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.enggeo.2016.06.008" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Stability Analysis of Potential Failure Zones Along NH-305</h4>
+      <div class="pub-meta">Mahanta, B., Singh, H. O., Singh, P. K., Kainthola, A., Singh, T. N.</div>
+      <div class="pub-meta jn">Natural Hazards &bull; 2016 <span class="if-tag">IF: 3.7</span></div>
+      <p>Uses field investigations, hazard zonation, and finite element modelling to identify and assess potentially unstable slope sections along a Himalayan highway.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1007/s11069-016-2396-8" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Prediction of Compressive Strength and Elastic Modulus of Carbonate Rocks</h4>
+      <div class="pub-meta">Madhubabu, N., Singh, P. K., Kainthola, A., Mahanta, B., Tripathy, A., Singh, T. N.</div>
+      <div class="pub-meta jn">Measurement &bull; 2016 <span class="if-tag">IF: 6.1</span></div>
+      <p>Develops empirical models using easily measured rock indices to predict uniaxial compressive strength and elastic modulus of carbonate rocks.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.measurement.2016.03.050" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+  </ol>
+
+  <div class="pub-cat-title" style="margin-top:48px">Conference Publications <span class="pub-badge">7 papers</span></div>
+  <ol class="pub-list">
+    <li><div class="pub">
+      <h4>Organic Petrographic Controls on CO<sub>2</sub> Sequestration Potential of Indian Coals</h4>
+      <div class="pub-meta">Tigga, M., Mahanta, B. C. and Sahoo, M. </div>
+      <div class="pub-meta jn">in 1st International Student Conference on Organic Petrography &bull; 2024 &bull;[Virtual Conference]</div>
+      <p>The importance of coal maceral composition on CO<sub>2</sub> adsorption and sequestration capacity in Indian coals was presented.</p>
+    </div></li>
+    <li><div class="pub">
+      <h4>Improving CO<sub>2</sub> injectivity and mineralization in Basalt via Cyclic Liquid Nitrogen Fracturing</h4>
+      <div class="pub-meta">Mohapatra, D., Mahanta, B.C.</div>
+      <div class="pub-meta jn">Unearthing the Past, Shaping the Future: 175 Years of Geological Survey of India &bull; 2025 &bull; Jaipur, India</div>
+      <p>The possible integration of cyclic liquid nitrogen fracturing with CO<sub>2</sub> injection for enhancing injectivity and mineralization in basalt was discussed.</p>
+    </div></li>
+    <li><div class="pub">
+      <h4>Evaluation of Brittleness Index of Different Shale Lithotypes from Rajmahal Basin, India</h4>
+      <div class="pub-meta">Sethi, C., Mahanta, B. C., Vishal, V., Hazra, B.</div>
+      <div class="pub-meta jn">2nd International Conference on Geotechnical Issues in Energy, Infrastructure and Disaster Management &bull; 2024 &bull; IIT Patna, India</div>
+      <p>Evaluates brittleness index of multiple shale lithotypes from Rajmahal Basin using mechanical testing and geomechanical indices, with implications for shale gas exploration and hydraulic fracturing design.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1007/978-981-97-1757-6_24" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Digital Rock Physics and Application of High-Resolution Micro-CT Techniques for Geomaterials</h4>
+      <div class="pub-meta">Mahanta B., Ranjith P. G., Singh T. N., Vishal V., Duan W., Sazid M.</div>
+      <div class="pub-meta jn">International Conference on Geomechanics, Geo-energy and Geo-resources (IC3G) &bull; 2018 &bull; Sichuan University, Chengdu, China</div>
+      <p>Presents the application of high-resolution X-ray micro-CT for characterising microstructure, pore geometry, and digital rock models of various geomaterials.</p>
+    </div></li>
+    <li><div class="pub">
+      <h4>Experimental Study of Strain Rate Sensitivity to Fracture Toughness of Rock Using Flattened Brazilian Disc</h4>
+      <div class="pub-meta">Mahanta, B., Sirdesai, N. N., Singh, T. N., Ranjith, P. G.</div>
+      <div class="pub-meta jn">ISRM European Rock Mechanics Symposium (EUROCK) &bull; 2018 &bull; Ostrava, Czech Republic</div>
+      <p>Uses the flattened Brazilian disc method to quantify how strain rate influences fracture toughness and tensile fracture behaviour of rocks.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/j.proeng.2017.05.179" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>Strain Rate Dependency of Fracture Toughness, Energy Release Rate and Geomechanical Attributes of Select Indian Shales</h4>
+      <div class="pub-meta">Mahanta, B., Vishal, V., Singh, T., Ranjith, P. G.</div>
+      <div class="pub-meta jn">American Geophysical Union (AGU) Fall Meeting &bull; 2016 &bull; San Francisco, USA</div>
+      <p>Presents experimental data on strain-rate dependency of key fracture parameters for Indian shale formations at the AGU Fall Meeting, highlighting their rate-sensitive mechanical behaviour.</p>
+    </div></li>
+    <li><div class="pub">
+      <h4>Elastic Modulus of Thermally Treated Fine-Grained Sandstone Using Non-Contact Laser Extensometer</h4>
+      <div class="pub-meta">Sirdesai, N. N., Mahanta, B., Singh, T. N., Ranjith, P. G.</div>
+      <div class="pub-meta jn">Recent Advances in Rock Engineering (RARE) &bull; 2016 &bull; Bangalore, India</div>
+      <p>Employs a non-contact laser extensometer to precisely measure elastic modulus of thermally treated fine-grained sandstone, demonstrating temperature-dependent stiffness degradation.</p>
+    </div></li>
+  </ol>
+
+  <div class="pub-cat-title" style="margin-top:48px">Book Chapters <span class="pub-badge">2 chapters</span></div>
+  <ol class="pub-list">
+    <li><div class="pub">
+      <h4>Mapping of Slope Failure Hazard Zonation Subject to Soil Characteristics: A Case Study of the Chaliyar River Basin, the Western Ghats, South India</h4>
+      <div class="pub-meta">Kaliraj, S., Bhagyashree, S., Mahanta, B., Lalitha, M., Chandrasekar, N.</div>
+      <div class="pub-meta jn">In: Remote Sensing of Soils: Mapping, Monitoring, and Measurement &bull; Elsevier &bull; 2024</div>
+      <p>Applies remote sensing and GIS techniques to slope failure hazard zonation based on soil characteristics in the Western Ghats, supporting land-use planning and disaster management.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1016/B978-0-443-18773-5.00043-0" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+    <li><div class="pub">
+      <h4>CO<sub>2</sub> Sequestration and Enhanced Coalbed Methane Recovery: Worldwide Status and Indian Scenario</h4>
+      <div class="pub-meta">Mahanta, B., Vishal, V.</div>
+      <div class="pub-meta jn">In: Applied Geology: Approaches to Future Resource Management &bull; Springer &bull; 2020</div>
+      <p>Reviews global and Indian perspectives on geological CO<sub>2</sub> sequestration in coal seams for enhanced coalbed methane recovery, covering technical, economic, and policy dimensions.</p>
+      <div class="pub-links"><a href="https://doi.org/10.1007/978-3-030-43953-8_10" target="_blank" rel="noopener">DOI &#8599;</a></div>
+    </div></li>
+  </ol>
+</div>
+</section>
+
+<!-- MEMBERS -->
+<section id="members" class="section">
+<div class="section-floating-gallery"><div class="float-row row1"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div><div class="float-row row2"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div><div class="float-row row3"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div><div class="float-row row4"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div></div>
+
+<div class="container sec-pad">
+  <div class="sec-head"><h2>Group Members</h2><div class="divider"></div><p>A dedicated team advancing rock mechanics and energy geoscience research.</p></div>
+
+  <div class="mem-cat">Principal Investigator</div>
+  <div class="mem-grid pi-g">
+    <div class="mem-card">
+      <div class="mem-pw"><img loading="eager" decoding="async" class="mem-photo" src="images/Active Members/Bankim.png" alt="Dr. Bankim Chandra Mahanta" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="mem-fb" style="display:none">BCM</div></div>
+      <div class="mem-name">Dr. Bankim Chandra Mahanta</div>
+      <div class="mem-role">Principal Investigator</div>
+      <p class="mem-focus">Engineering geology, rock mechanics, geological carbon sequestration, enhanced oil and gas recovery</p>
+      <div class="mem-links">
+        <a href="https://scholar.google.com/citations?user=bkOVAsYAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/applied-rock-mechanics-and-energy-laboratory-iit-bhubaneswar-470791358/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mem-cat">Ph.D. Students</div>
+  <div class="mem-grid">
+    <div class="mem-card">
+      <div class="mem-pw"><img loading="eager" decoding="async" class="mem-photo" src="images/Active Members/Dibyajeet.png" alt="Dibyajeet Mohapatra" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="mem-fb" style="display:none">DM</div></div>
+      <div class="mem-name">Dibyajeet Mohapatra</div>
+      <div class="mem-role">Ph.D. Scholar</div>
+      <div class="mem-join">Joined: January 2024</div>
+      <p class="mem-focus">CO<sub>2</sub> injection optimisation, reservoir simulation</p>
+      <div class="mem-links"><a href="#" target="_blank">Google Scholar</a><a href="#" target="_blank">LinkedIn</a></div>
+    </div>   
+    <div class="mem-card">
+      <div class="mem-pw"><img loading="eager" decoding="async" class="mem-photo" src="images/Active Members/Saisiddhant.png" alt="Saisiddhant Moharana" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="mem-fb" style="display:none">SM</div></div>
+      <div class="mem-name">Saisiddhant Moharana</div>
+      <div class="mem-role">Ph.D. Scholar</div>
+      <div class="mem-join">Joined: January 2025</div>
+      <p class="mem-focus">Slope stability analysis</p>
+      <div class="mem-links"><a href="https://scholar.google.com/citations?hl=en&authuser=1&user=oXcJHdgAAAAJ" target="_blank">Google Scholar</a><a href="https://www.linkedin.com/in/saisiddhant-moharana-4b7403363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></div>
+    </div>
+    <div class="mem-card">
+      <div class="mem-pw"><img loading="eager" decoding="async" class="mem-photo" src="images/Active Members/Manish.png" alt="Manish Tigga" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="mem-fb" style="display:none">MT</div></div>
+      <div class="mem-name">Manish Tigga</div>
+      <div class="mem-role">Ph.D. Scholar</div>
+      <div class="mem-join">Joined: July 2025</div>
+      <p class="mem-focus">Geochemical and geomechanical characteristics of coal</p>
+      <div class="mem-links"><a href="https://scholar.google.com/citations?hl=en&user=6fTodw4AAAAJ&sortby=pubdate&view_op=list_works&citft=1&email_for_op=robintigga0761%40gmail.com&gmla=ACrTK9Wiq9OQvW5ZZ7WEXvBtqMucjJR2fk4KfYBsF0ugc_u1B5u6_zXSTLjNHC5XwVp1ZopGKdCDwpCpZA8QF6JA" target="_blank">Google Scholar</a><a href="https://www.linkedin.com/in/manish-tigga-026731384" target="_blank">LinkedIn</a></div>
+    </div>
+    <div class="mem-card">
+      <div class="mem-pw"><img loading="eager" decoding="async" class="mem-photo" src="images/Active Members/Partha.png" alt="Partha Sarathi Maikap" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="mem-fb" style="display:none">PM</div></div>
+      <div class="mem-name">Partha Sarathi Maikap</div>
+      <div class="mem-role">Ph.D. Scholar</div>
+      <div class="mem-join">Joined: July 2025</div>
+      <p class="mem-focus">Geological carbon sequestration</p>
+      <div class="mem-links"><a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=ACrTK9UvTrRKYC7E8skne2H0dQfrZZUcO9eS79H6iMkfh2i7eK3jivUjsCrEunQMR0W68XDovAITZfN4yW4Rjw&user=-OTH6GwAAAAJ" target="_blank">Google Scholar</a><a href="https://www.linkedin.com/in/partha-sarathi-maikap-8689022b8" target="_blank">LinkedIn</a></div>
+    </div>
+  </div>
+
+  <div class="mem-cat">M.Sc. Students</div>
+  <div class="mem-grid">
+    <div class="mem-card">
+      <div class="mem-pw"><img loading="eager" decoding="async" class="mem-photo" src="images/Active Members/Ankita.png" alt="Ankita Das" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="mem-fb" style="display:none">AD</div></div>
+      <div class="mem-name">Ankita Das</div><div class="mem-role">M.Sc. Student</div>
+      <p class="mem-focus">Coal Geology</p>
+      <div class="mem-links"><a href="#" target="_blank">Google Scholar</a><a href="#" target="_blank">LinkedIn</a></div>
+    </div>
+    <div class="mem-card">
+      <div class="mem-pw"><img loading="eager" decoding="async" class="mem-photo" src="images/Active Members/Sourav.png" alt="Saurav Kumar Mandal" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="mem-fb" style="display:none">SK</div></div>
+      <div class="mem-name">Saurav Kumar Mandal</div><div class="mem-role">M.Sc. Student</div>
+      <p class="mem-focus">Pore Structure Characterisation of Coastal Soils </p>
+      <div class="mem-links"><a href="#" target="_blank">Google Scholar</a><a href="#" target="_blank">LinkedIn</a></div>
+    </div>
+    <div class="mem-card">
+      <div class="mem-pw"><img loading="eager" decoding="async" class="mem-photo" src="images/Active Members/Tapaswini.png" alt="Tapaswini Behera" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="mem-fb" style="display:none">TB</div></div>
+      <div class="mem-name">Tapaswini Behera</div><div class="mem-role">M.Sc. Student</div>
+      <p class="mem-focus">Soil Physicochemical Characteristics in Coastal Ecosystems</p>
+      <div class="mem-links"><a href="#" target="_blank">Google Scholar</a><a href="#" target="_blank">LinkedIn</a></div>
+    </div>
+  </div>
+
+  <div class="mem-cat">Working Professional</div>
+  <div class="mem-grid">
+    <div class="mem-card">
+      <div class="mem-pw"><img loading="eager" decoding="async" class="mem-photo" src="images/Active Members/Debasis.png" alt="Debasis Mohanty" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="mem-fb" style="display:none">DM</div></div>
+      <div class="mem-name">Debasis Mohanty</div><div class="mem-role">Ph.D. Scholar (Industry Personnel)</div>
+      <div class="mem-join">Joined: January 2026</div>
+      <p class="mem-focus">Geotechnical investigation for tunnelling</p>
+      <div class="mem-links"></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ALUMNI -->
+<section id="alumni" class="section" style="background:var(--white)">
+<div class="section-floating-gallery"><div class="float-row row1"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div><div class="float-row row2"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div><div class="float-row row3"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div><div class="float-row row4"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div></div>
+
+<div class="container sec-pad">
+  <div class="sec-head"><h2>Alumni</h2><div class="divider"></div><p>Graduates who have shaped and been shaped by the ARMEL research community.</p></div>
+
+  <div class="pub-cat-title">Ph.D. Alumni</div>
+  <p style="color:var(--fern);font-size:.9rem;margin-bottom:24px;font-style:italic">Ph.D. alumni records will be added as they graduate. Watch this space!</p>
+
+  <div class="pub-cat-title" style="margin-top:40px">M.Sc. Alumni</div>
+
+  <div class="aly-year">2026</div>
+  <div class="aly-grid">
+    <div class="aly-card">
+      <img loading="eager" decoding="async" class="aly-photo" src="images/Alumni/Sheetal.png" alt="Sheetal Shreeparna" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="aly-fb" style="display:none">SS</div>
+      <h3>Sheetal Shreeparna</h3>
+      <p><strong>Current Position:</strong>- </p>
+      <p><strong>Project:</strong> Salinity-driven fracture mechanical evolution of sandstone reservoir: implications for geological CO<sub>2</sub> storage integrity.</p>
+      <div class="aly-quote">&#8220;One of the best periods in my academic career has been that of working at ARMEL. My dissertation work helped me improve both tecnically and personally, and I really enjoyed myself during the entire process. The seniors in the lab and my supervisor were very cooperative and always available to help me and clear all my queries, no matter how small they were. This positive atmosphere made learning an easy task for me. ARMEL will always remain with me not only in terms of my dissertation, but also through the skills and knowledge that I gained there.&#8221;</div>
+      <div class="mem-links"><a href="https://www.linkedin.com/in/sheetal-shreeparna-562986268" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+    <div class="aly-card">
+      <img loading="eager" decoding="async" class="aly-photo" src="images/Alumni/Soumya.png" alt="Soumya Sucharita Panda" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="aly-fb" style="display:none">SM</div>
+      <h3>Soumya Sucharita Panda</h3>
+      <p><strong>Current Position:</strong> &#8212;</p>
+      <p><strong>Project:</strong> Integrated study of pore structure and maceral composition of coal for evaluating CBM storage and adsorption potential.</p>
+      <div class="aly-quote">&#8220;Working in ARMEL (Advanced Rock Mechanics and Energy Laboratory) during my M.Sc. dissertation was a valuable learning experience for me. The lab gave me the opportunity to work with various analytical techniques such as petrography, SEM-EDS, XRD, Rock-Eval pyrolysis, and low pressure gas adsorption analysis, which helped me understand coal characterization and pore structure in much greater detail. Throughout my research, I was encouraged to explore new ideas, analyze data independently, and develop a scientific approach to problem-solving. The guidance and support I received from Dr. Bankim Chandra Mahanta played an important role in improving my research and technical skills. The laboratory environment was friendly, motivating, and encouraging to learning. Beyond academics, the experience helped me become more confident in handling and presenting scientific results. I am grateful to the lab for providing me with such a strong foundation for my future career.&#8221;</div>
+    </div>    
+  </div>
+
+  <div class="aly-year">2025</div>
+  <div class="aly-grid">
+    <div class="aly-card">
+      <img loading="eager" decoding="async" class="aly-photo" src="images/Alumni/Manish.png" alt="Manish Tigga" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="aly-fb" style="display:none">MT</div>
+      <h3>Manish Tigga</h3>
+      <p><strong>Current Position:</strong> Research Scholar, IIT Bhubaneswar</p>
+      <p><strong>Project:</strong> Geochemical and geomechanical characteristics of Indian coal from Damodar River Basin: Insights into geological control on coal depositional and failure characteristics.</p>
+      <div class="aly-quote">&#8220;The research environment at IIT Bhubaneswar provided me with excellent opportunities to explore cutting-edge technologies in carbon sequestration. The collaborative atmosphere and world-class facilities were instrumental in my professional development.&#8221;</div>
+    </div>
+    <div class="aly-card">
+      <img loading="eager" decoding="async" class="aly-photo" src="images/Alumni/Subham.png" alt="Subham Prasad Mahanta" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="aly-fb" style="display:none">SM</div>
+      <h3>Subham Prasad Mahanta</h3>
+      <p><strong>Current Position:</strong> &#8212;</p>
+      <p><strong>Project:</strong> Experimental and Numerical Study on the Progressive Failure Mechanism of Soft Rock Subjected to Tunnelling.</p>
+      <div class="aly-quote">&#8220;Being a part of ARMEL has played a significant role in shaping my academic growth. It helped me build strong practical understanding and research skills in a supportive and motivating environment. I am sincerely grateful to Dr. Bankim Chandra Mahanta and my lab mates for their continuous support and encouragement.&#8221;</div>
+    </div>
+    <div class="aly-card">
+      <img loading="eager" decoding="async" class="aly-photo" src="images/Alumni/Suryakanta.png" alt="Suryakanta Sahoo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="aly-fb" style="display:none">SS</div>
+      <h3>Suryakanta Sahoo</h3>
+      <p><strong>Current Position:</strong> Research Scholar, Ben Gurion University of the Negev, Israel</p>
+      <p><strong>Project:</strong> Experimental investigation on cryogenic fracturing of basalt using liquid nitrogen at elevated temperatures: An implication for carbonate mineralisation.</p>
+      <div class="aly-quote">&#8220;ARMEL is more than just a research group &#8212; it is a community. As a Master&#8217;s student, I felt fully supported. The mentorship I received was instrumental; the friendships and collaborations I made here are memories I will always cherish.&#8221;</div>
+    </div>
+  </div>
+
+  <div class="aly-year" style="margin-top:40px">2024</div>
+  <div class="aly-grid">
+    <div class="aly-card">
+      <img loading="eager" decoding="async" class="aly-photo" src="images/Alumni/Sasmita.png" alt="Sasmita Kar" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="aly-fb" style="display:none">SK</div>
+      <h3>Sasmita Kar</h3>
+      <p><strong>Current Position:</strong> Geologist, Tata Steel</p>
+      <p><strong>Project:</strong> Investigation into the Adsorption Characteristics and Pore Characterisation of Shale.</p>
+      <div class="aly-quote">&#8220;Working under Dr. Bankim Chandra Mahanta, I gained hands-on experience in rock testing and analysis. This strengthened my understanding of rock mechanics principles and their practical relevance in subsurface engineering. I wish all the best for all the members of the lab and keep growing.&#8221;</div>
+      <div class="mem-links"><a href="https://www.linkedin.com/in/sasmita-kar-217a7a1ab/" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+    <div class="aly-card">
+      <img loading="eager" decoding="async" class="aly-photo" src="images/Alumni/Pratyush.png" alt="Pratyush Swain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="aly-fb" style="display:none">PS</div>
+      <h3>Pratyush Swain</h3>
+      <p><strong>Current Position:</strong> Geologist, GMDC</p>
+      <p><strong>Project:</strong> A Comparative Investigation into Pore Network Attributes of Reservoir Rocks Using X-ray Micro-CT.</p>
+      <div class="aly-quote">&#8220;Being a part of ARMEL was a truly rewarding experience. More than just a lab, it was a supportive environment where complex geological challenges evolved into a lasting professional passion. I am deeply grateful for the mentorship and opportunities that have profoundly shaped the professional I am today.&#8221;</div>
+      <div class="mem-links"><a href="https://www.linkedin.com/in/pratyush-swain-706b1238a" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+    <div class="aly-card">
+      <img loading="eager" decoding="async" class="aly-photo" src="images/Alumni/Aditi.png" alt="Aditi Das" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="aly-fb" style="display:none">AD</div>
+      <h3>Aditi Das</h3>
+      <p><strong>Current Position:</strong> Research Scholar, IIT Kharagpur</p>
+      <p><strong>Project:</strong> The Effect of Fluid-Rock Interaction on the Geo-mechanical Behaviour and Failure Attributes of Sandstone from Ib Valley, Odisha.</p>
+      <div class="aly-quote">&#8220;My time at ARMEL was a defining chapter in my academic career. I got introduced to new machineries and technologies which helped instil in me a rigorous research mentality and keenness in the academic field. Looking forward to its continued growth.&#8221;</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- NEWS -->
+<section id="news" class="section">
+<div class="section-floating-gallery"><div class="float-row row1"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div>
+<div class="float-row row2"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div></div>
+
+<div class="container sec-pad">
+  <div class="sec-head"><h2>News &amp; Updates</h2><div class="divider"></div></div>
+  <div class="news-list">
+    <div class="news-item">
+      <div class="news-date">April 2026</div>
+      <h3>Installation of New Experimental Facilities at ARMEL</h3>
+      <p>ARMEL has recently strengthened its experimental capabilities with the procurement of high-pressure batch reactors of 100 mL, 300 mL, and 500 mL capacities, enabling advanced studies on CO<sub>2</sub> sequestration, fluid–rock interactions, and hydrothermal processes.</p>
+      <p>A state-of-the-art triaxial core holder has been added to ARMEL, providing the capability to simulate subsurface reservoir conditions for permeability, fluid-flow, geomechanical, and CO<sub>2</sub> injection experiments under controlled stress environments.</p>
+    <div class="news-media">
+        <img src="images/news/facility/DCAM_Reactor _ 100ml.jpg" alt="">
+        <img src="images/news/facility/DCAM_Reactor _ 300ml.jpg" alt="">
+        <img src="images/news/facility/DCAM_Reactor _ 500ml.jpg" alt="">
+        <img src="images/news/facility/triaxial_core_holder.jpg" alt="">                
+    </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">April 13-15, 2026</div>
+      <h3>Mr. Manish Tigga presented his research in 1st International Student Conference on Organic Petrology organised by The Society of Organic Petrology [Virtual]</h3>
+      <p>Presented his research on “Organic Petrographic Controls on CO2 Sequestration Potential of Indian Coals”.</p>
+    <div class="news-media">               
+    </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">March 23-27, 2026</div>
+      <h3>Mr. Manish Tigga Participated in workshops/training program on "Fossil Fuel and Climate Change 2026" by CSIR-NGRI</h3>
+      <p>Gained knowledge of advanced analytical instruments, paleoclimate proxies, coal macerals, biomarker analysis, and hydrogen storage. Awarded Second Prize in the final training examination</p>
+    <div class="news-media">
+        <img src="images/news/students/manish1.jpg" alt="">
+        <img src="images/news/students/manish2.jpg" alt="">         
+    </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">March 9-14, 2026</div>
+      <h3>Mr. Saisiddhant Moharana Participated in LARAM Course 2026 hosted by IIT Mandi</h3>
+      <p>Mr. Saisiddhant, a Research Scholar of ARMEL, IIT Bhubaneswar, was selected for the LARAM (LAndslide Risk Assessment and Mitigation) Course 2026 hosted by IIT Mandi from 9-14 March, 2026. The course focused on landslide hazard assessment, risk management, remote sensing, early warning systems, and mitigation strategies, delivered through expert lectures and tutorials by leading subject-matter experts.</p>
+    <div class="news-media">
+        <img src="images/news/students/sai1.jpg" alt="">
+        <img src="images/news/students/sai2.jpg" alt="">         
+    </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">February 20-21, 2026</div>
+      <h3>Mr. Manish Tigga Participated in workshops/training program on "Unconventional Coal: From Hydrocarbons to Storage to Critical Minerals" by IIT (ISM) Dhanbad [Virtual]</h3>
+      <p> Learned about CBM as a clean energy source, coal cleat systems, maceral composition, carbon sequestration, CBM extraction, energy storage, and rare earth elements in coal.</p>
+    <div class="news-media">                
+    </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">November 20-21, 2025</div>
+      <h3>Mr. Dibyajeet Mohapatra presented his research in "Unearthing the Past, Shaping the Future: 175 Years of Geological Survey of India"</h3>
+      <p> Presented on Improving CO<sub>2</sub> injectivity and mineralization in Basalt via Cyclic Liquid Nitrogen Fracturing.</p>
+    <div class="news-media">
+        <img src="images/news/students/dibya1.jpg" alt="">
+        <img src="images/news/students/dibya2.jpg" alt="">        
+    </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">October 13-16, 2025</div>
+      <h3>Mr. Dibyajeet Mohapatra and Mr. Partha Sarathi Maikap Participated in CCUS Workshop on “Carbon Capture and Storage (CCS): From Concepts to Field Implementation” Organized by IISER Bhopal</h3>
+      <p> This four-day workshop covered the fundamentals and field applications of Carbon Capture and Storage, spanning topics from CCS in saline aquifers and coal seams to mineral carbonation, with hands-on sessions and a field visit to the Deccan basalts of the Malwa plateau. We developed a broader perspective on CCS as a climate mitigation tool, from conceptual frameworks to field-scale implementation.</p>
+    <div class="news-media">
+        <img src="images/news/students/partha1.jpg" alt="">
+        <img src="images/news/students/partha2.jpg" alt="">        
+    </div>
+    </div>    
+    <div class="news-item">
+      <div class="news-date">May 26, 2025</div>
+      <h3>Research Group Receives Major Grant for Carbon Sequestration Project from the Department of Science and Technology</h3>
+      <p>Our research group has been awarded a significant grant from the Department of Science and Technology for a three-year project on &#8220;Geological Carbon Sequestration in Basalt.&#8221; This funding will support cutting-edge research in CO<sub>2</sub> storage verification, cryogenic fracturing, carbonate mineralisation, and long-term monitoring systems.</p>
+    <div class="news-media">        
+    </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">May 26, 2025</div>
+      <h3>International Collaboration Established with Monash University</h3>
+      <p>We are excited to announce a new research collaboration with Monash University&#8217;s Department of Civil and Environmental Engineering, Australia. This partnership will focus on developing next-generation numerical models for CO<sub>2</sub> injection in complex geological formations, combining ARMEL&#8217;s experimental expertise with Monash&#8217;s computational capabilities.</p>
+    <div class="news-media">        
+    </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">April 6, 2025</div>
+      <h3>New 300 ml Autoclave Reactor Successfully Installed at ARMEL</h3>
+      <p>We have successfully installed a 300 ml stirrer autoclave reactor in ARMEL. This advanced high-pressure, high-temperature system (rated to 100 bar and 300 &#176;C) enables pressure-temperature experiments in basalts and other rock types, simulating deep geological conditions for carbon mineralisation research.</p>
+    <div class="news-media">
+        <img src="images/news/facility/Autoclave reactor.jpg" alt="">        
+    </div>
+    </div>
+    <div class="news-item">
+      <div class="news-date">April 6, 2025</div>
+      <h3>ARMEL Conducted One-Day Workshop on Hydrocarbon Exploration and Climate Change Mitigation</h3>
+      <p>This workshop was specially designed for faculty members from various colleges and universities across Odisha, providing them with insights into advancements in hydrocarbon exploration and its role in climate change mitigation. Distinguished Speakers:
+            1.	Prof. Sarada Prasad Pradhan, Department of Earth Sciences, IIT Roorkee
+            2.	Prof. Vikram Vishal, Department of Earth Sciences, IIT Bombay (Virtual)
+            3.	Dr. Soumyashree Debasis Sahoo, School of Earth, Ocean, and Climate Sciences, IIT Bhubaneswar.
+      </p>
+    <div class="news-media">
+        <img src="images/news/workshop/workshop1.jpg" alt="">
+        <img src="images/news/workshop/workshop2.jpg" alt="">
+        <img src="images/news/workshop/workshop3.jpg" alt="">
+        <img src="images/news/workshop/workshop4.jpg" alt="">
+        <img src="images/news/workshop/workshop5.jpg" alt="">         
+    </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section" style="background:var(--white)">
+<div class="section-floating-gallery"><div class="float-row row1"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg6.jpg"></div>
+<div class="float-row row2"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"><img src="images/gallery/bg6.jpg"><img src="images/gallery/bg5.jpg"><img src="images/gallery/bg4.jpg"><img src="images/gallery/bg3.jpg"><img src="images/gallery/bg2.jpg"><img src="images/gallery/bg1.jpg"></div></div>
+
+<div class="container sec-pad">
+  <div class="sec-head"><h2>Get in Touch</h2><div class="divider"></div><p>We welcome enquiries from prospective students, collaborators, and industry partners.</p></div>
+  <div class="ct-layout">
+    <div class="ct-info">
+      <h3>Contact Details</h3>
+      <div class="ct-block">
+        <div class="ct-lbl">&#128231; Email</div>
+        <p><a href="mailto:armel.iitbbs@gmail.com">armel.iitbbs@gmail.com</a></p>
+        <p><a href="mailto:bankimcm@iitbbs.ac.in">bankimcm@iitbbs.ac.in</a></p>
+      </div>
+      <div class="ct-block">
+        <div class="ct-lbl">&#128222; Phone</div>
+        <p><a href="tel:+919167768410">+91-9167768410</a> &#8212; Dr. Bankim Chandra Mahanta</p>
+        <p><a href="tel:+916747135538">+91-674-713-5538</a> &#8212; Office</p>
+      </div>
+      <div class="ct-block">
+        <div class="ct-lbl">&#128205; Address</div>
+        <p>Applied Rock Mechanics &amp; Energy Laboratory<br>Room No. 09, Ground Floor<br>School of Earth, Ocean and Climate Sciences<br>IIT Bhubaneswar, Argul, Khurda &#8211; 752050<br>Odisha, India</p>
+      </div>
+      
+<div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.83!2d85.67236!3d20.14877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a783a2c2b9e9%3A0xb9e87f6e7dd9bb89!2sIIT%20Bhubaneswar!5e0!3m2!1sen!2sin!4v1" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="IIT Bhubaneswar location"></iframe>
+      </div>
+    </div>
+    <div class="ct-form">
+      <h3>Send a Message</h3>
+      <form action="mailto:armel.iitbbs@gmail.com,bankimcm@iitbbs.ac.in" method="POST" enctype="text/plain">
+        <div class="form-row">
+          <div class="fg"><label for="name">Full Name *</label><input type="text" id="name" name="Name" placeholder="Dr. Jane Smith" required></div>
+          <div class="fg"><label for="email">Email Address *</label><input type="email" id="email" name="Email" placeholder="jane@university.edu" required></div>
+        </div>
+        <div class="form-row">
+          <div class="fg"><label for="affil">Affiliation</label><input type="text" id="affil" name="Affiliation" placeholder="Your institution / organisation"></div>
+          <div class="fg"><label for="etype">Enquiry Type</label>
+            <select id="etype" name="Enquiry-Type">
+              <option value="">Select&hellip;</option>
+              <option>Research Collaboration</option>
+              <option>Ph.D. Admission</option>
+              <option>Consultancy Services</option>
+              <option>Student Project</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+        </div>
+        <div class="fg"><label for="subject">Subject *</label><input type="text" id="subject" name="Subject" placeholder="Brief subject line" required></div>
+        <div class="fg"><label for="message">Message *</label><textarea id="message" name="Message" rows="6" placeholder="Please describe your enquiry in detail&hellip;" required></textarea></div>
+        <button type="submit" class="btn-sub">Send Message &#8594;</button>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="logo-abbr">ARMEL</div>
+        <div class="logo-full">Applied Rock Mechanics &amp; Energy Laboratory</div>
+        <p>A research group at the School of Earth, Ocean and Climate Sciences, IIT Bhubaneswar, dedicated to advancing rock mechanics, geological carbon sequestration, and energy geoscience.</p>
+      </div>
+      <div class="ft-col"><h4>Navigation</h4>
+        <ul class="ft-links">
+          <li><a onclick="showSection('home')">Home</a></li>
+          <li><a onclick="showSection('about')">About</a></li>
+          <li><a onclick="showSection('research')">Research</a></li>
+          <li><a onclick="showSection('professional-service')">Services</a></li>
+          <li><a onclick="showSection('publications')">Publications</a></li>
+        </ul>
+      </div>
+      <div class="ft-col"><h4>People</h4>
+        <ul class="ft-links">
+          <li><a onclick="showSection('members')">Current Members</a></li>
+          <li><a onclick="showSection('alumni')">Alumni</a></li>
+          <li><a onclick="showSection('news')">News &amp; Updates</a></li>
+          <li><a onclick="showSection('contact')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="ft-col"><h4>Connect</h4>
+        <ul class="ft-links">
+          <li><a href="mailto:armel.iitbbs@gmail.com">armel.iitbbs@gmail.com</a></li>
+          <li><a href="mailto:bankimcm@iitbbs.ac.in">bankimcm@iitbbs.ac.in</a></li>
+          <li></li>
+          <li><a href="https://www.linkedin.com/in/applied-rock-mechanics-and-energy-laboratory-iit-bhubaneswar-470791358/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>&copy; 2025 Applied Rock Mechanics &amp; Energy Laboratory, IIT Bhubaneswar. All rights reserved.</p>
+      <div class="ft-badge">&#127963;&#65039; IIT Bhubaneswar &mdash; Argul, Khurda, Odisha 752050</div>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div id="spec-modal" class="spec-modal" aria-hidden="true">
+  <div class="spec-modal-backdrop" data-role="backdrop"></div>
+  <div class="spec-modal-content" role="dialog" aria-modal="true">
+    <button class="spec-modal-close" aria-label="Close">&times;</button>
+    <h2 class="spec-modal-title"></h2>
+    <dl class="spec-modal-list"></dl>
+  </div>
+</div>
+
+<script>
+/* ── SECTION NAVIGATION ── */
+function showSection(id){
+
+    document.querySelectorAll('.section').forEach(section=>{
+        section.classList.remove('active');
+    });
+
+    const target=document.getElementById(id);
+
+    if(target){
+        target.classList.add('active');
+    }
+
+    window.scrollTo({
+        top:0,
+        behavior:'smooth'
+    });
+
+    document.querySelectorAll('nav a').forEach(link=>{
+        link.classList.remove('active-link');
+    });
+
+    const activeLink=document.querySelector(`nav a[onclick="showSection('${id}')"]`);
+
+    if(activeLink){
+        activeLink.classList.add('active-link');
+    }
+
+    const nav=document.getElementById('nav');
+    if(nav){
+        nav.classList.remove('active');
+    }
+}
+function toggleMobileMenu(){document.getElementById('nav').classList.toggle('active');}
+
+/* ── HERO CANVAS — Animated Geological / Rock-Mechanics Scene ── */
+(function(){
+  var canvas=document.getElementById('hero-canvas');
+  if(!canvas)return;
+  var ctx=canvas.getContext('2d');
+
+  function resize(){canvas.width=canvas.offsetWidth;canvas.height=canvas.offsetHeight;}
+  resize();
+  window.addEventListener('resize',resize);
+
+  // Seismic waveform particles
+  var WAVE_COUNT=5;
+  var waves=[];
+  for(var i=0;i<WAVE_COUNT;i++){
+    waves.push({
+      y: 0.2 + i*0.15,
+      speed: 0.4+Math.random()*0.3,
+      amp: 18+Math.random()*22,
+      freq: 0.012+Math.random()*0.008,
+      phase: Math.random()*Math.PI*2,
+      alpha: 0.12+i*0.04,
+      color: i%2===0 ? '#14b8a6' : '#2c5282'
+    });
+  }
+
+  // Rock fracture nodes (stress network)
+  var NODE_COUNT=38;
+  var nodes=[];
+  for(var n=0;n<NODE_COUNT;n++){
+    nodes.push({
+      x:Math.random(),y:Math.random(),
+      vx:(Math.random()-.5)*0.0006,
+      vy:(Math.random()-.5)*0.0006,
+      r:1.2+Math.random()*1.6,
+      alpha:0.18+Math.random()*0.22
+    });
+  }
+
+  // Floating data particles (small dots like CT scan voxels)
+  var PART_COUNT=55;
+  var parts=[];
+  for(var p=0;p<PART_COUNT;p++){
+    parts.push({
+      x:Math.random(),y:Math.random(),
+      vx:(Math.random()-.5)*0.0004,
+      vy:-0.0003-Math.random()*0.0004,
+      r:0.8+Math.random()*1.4,
+      alpha:0.1+Math.random()*0.18,
+      color: Math.random()<0.5?'#14b8a6':'#ffffff'
+    });
+  }
+
+  var t=0;
+
+  function draw(){
+    var W=canvas.width, H=canvas.height;
+    ctx.clearRect(0,0,W,H);
+
+    // ── Geological strata layers (background) ──
+    var strata=[
+      {y:.62, h:.07, col:'rgba(30,58,95,0.55)'},
+      {y:.69, h:.08, col:'rgba(13,148,136,0.18)'},
+      {y:.77, h:.07, col:'rgba(30,58,95,0.4)'},
+      {y:.84, h:.06, col:'rgba(13,148,136,0.12)'},
+      {y:.90, h:.10, col:'rgba(13,27,42,0.5)'},
+    ];
+    strata.forEach(function(s){
+      // Slightly wavy stratum boundary
+      ctx.beginPath();
+      ctx.moveTo(0,s.y*H);
+      for(var x=0;x<=W;x+=8){
+        var wave=Math.sin(x*0.018+t*0.4+s.y*10)*4;
+        ctx.lineTo(x,(s.y+wave/H)*H);
+      }
+      ctx.lineTo(W,(s.y+s.h)*H);
+      ctx.lineTo(0,(s.y+s.h)*H);
+      ctx.closePath();
+      ctx.fillStyle=s.col;
+      ctx.fill();
+    });
+
+    // ── Seismic waveforms ──
+    waves.forEach(function(w){
+      ctx.beginPath();
+      for(var x=0;x<=W;x+=2){
+        var y=w.y*H + Math.sin(x*w.freq + t*w.speed + w.phase)*w.amp
+                     + Math.sin(x*w.freq*2.3 + t*w.speed*.7)*w.amp*.35;
+        x===0?ctx.moveTo(x,y):ctx.lineTo(x,y);
+      }
+      ctx.strokeStyle=w.color;
+      ctx.globalAlpha=w.alpha;
+      ctx.lineWidth=1.4;
+      ctx.stroke();
+      ctx.globalAlpha=1;
+    });
+
+    // ── Fracture network ──
+    ctx.globalAlpha=1;
+    for(var i=0;i<nodes.length;i++){
+      for(var j=i+1;j<nodes.length;j++){
+        var dx=(nodes[i].x-nodes[j].x)*W;
+        var dy=(nodes[i].y-nodes[j].y)*H;
+        var dist=Math.sqrt(dx*dx+dy*dy);
+        if(dist<110){
+          var alpha=0.12*(1-dist/110);
+          ctx.beginPath();
+          ctx.moveTo(nodes[i].x*W,nodes[i].y*H);
+          ctx.lineTo(nodes[j].x*W,nodes[j].y*H);
+          ctx.strokeStyle='rgba(20,184,166,'+alpha+')';
+          ctx.lineWidth=.7;
+          ctx.stroke();
+        }
+      }
+    }
+
+    // ── Node points ──
+    nodes.forEach(function(nd){
+      ctx.beginPath();
+      ctx.arc(nd.x*W,nd.y*H,nd.r,0,Math.PI*2);
+      ctx.fillStyle='rgba(20,184,166,'+nd.alpha+')';
+      ctx.fill();
+      nd.x+=nd.vx; nd.y+=nd.vy;
+      if(nd.x<0||nd.x>1)nd.vx*=-1;
+      if(nd.y<0||nd.y>1)nd.vy*=-1;
+    });
+
+    // ── Floating micro-CT voxel particles ──
+    parts.forEach(function(p){
+      ctx.beginPath();
+      ctx.arc(p.x*W,p.y*H,p.r,0,Math.PI*2);
+      ctx.fillStyle=p.color;
+      ctx.globalAlpha=p.alpha;
+      ctx.fill();
+      p.x+=p.vx; p.y+=p.vy;
+      if(p.x<0)p.x=1; if(p.x>1)p.x=0;
+      if(p.y<0)p.y=1; if(p.y>1)p.y=0;
+      ctx.globalAlpha=1;
+    });
+
+    // ── Borehole drill string (right side) ──
+    var bx=W*0.88, by1=H*0.05, by2=H*0.72;
+    ctx.beginPath();
+    ctx.moveTo(bx,by1); ctx.lineTo(bx,by2);
+    ctx.strokeStyle='rgba(203,213,225,0.18)';
+    ctx.lineWidth=3; ctx.stroke();
+    // drill bit
+    ctx.beginPath();
+    ctx.moveTo(bx-8,by2); ctx.lineTo(bx+8,by2); ctx.lineTo(bx,by2+14); ctx.closePath();
+    ctx.fillStyle='rgba(20,184,166,0.35)'; ctx.fill();
+    // depth markers
+    for(var d=0;d<6;d++){
+      var dy=by1+(by2-by1)*(d/6);
+      ctx.beginPath();
+      ctx.moveTo(bx-5,dy); ctx.lineTo(bx+5,dy);
+      ctx.strokeStyle='rgba(203,213,225,0.25)';
+      ctx.lineWidth=1; ctx.stroke();
+    }
+
+    t+=0.012;
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ── SCROLL REVEAL ── */
+function checkReveals(){
+  document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(function(el){
+    var rect=el.getBoundingClientRect();
+    if(rect.top<window.innerHeight*0.9){el.classList.add('visible');}
+  });
+}
+window.addEventListener('scroll',checkReveals,{passive:true});
+
+/* ── HEADER SHADOW ON SCROLL ── */
+window.addEventListener('scroll',function(){
+  document.querySelector('header').classList.toggle('scrolled',window.scrollY>40);
+},{passive:true});
+
+/* ── COUNT-UP ANIMATION for hero stats ── */
+function animateCount(el,target,duration){
+  var start=0,step=target/((duration||1200)/16);
+  var suffix=el.dataset.suffix||'';
+  var prefix=el.dataset.prefix||'';
+  var timer=setInterval(function(){
+    start+=step;
+    if(start>=target){start=target;clearInterval(timer);}
+    el.textContent=prefix+Math.floor(start)+suffix;
+  },16);
+}
+
+/* ── INIT ── */
+document.addEventListener('DOMContentLoaded',function(){
+  // Open external links in new tab
+  document.querySelectorAll('.publication-links a,.mem-links a').forEach(function(a){
+    a.setAttribute('target','_blank');a.setAttribute('rel','noopener noreferrer');
+  });
+
+  // Count-up on hero stats
+  var statEls=document.querySelectorAll('.h-stat-n');
+  var targets=[20,2,9,8];
+  var suffixes=['+','','',''];
+  statEls.forEach(function(el,i){
+    el.dataset.suffix=suffixes[i]||'';
+    animateCount(el,targets[i]||0,1400);
+  });
+
+  // Add reveal classes to key elements
+  document.querySelectorAll('.ra-card,.proj-card,.svc-card,.pub,.mem-card,.aly-card,.news-item,.pillar,.fac-card').forEach(function(el,i){
+    el.classList.add('reveal');
+    el.style.transitionDelay=(i%4)*0.07+'s';
+  });
+  document.querySelectorAll('.about-text').forEach(function(el){el.classList.add('reveal-left');});
+  document.querySelectorAll('.pillars').forEach(function(el){el.classList.add('reveal-right');});
+  document.querySelectorAll('.sec-head').forEach(function(el){el.classList.add('reveal');});
+
+  checkReveals();
+
+  // ── Spec modal ──
+  var modal=document.getElementById('spec-modal');
+  var mTitle=modal.querySelector('.spec-modal-title');
+  var mList=modal.querySelector('.spec-modal-list');
+  var mClose=modal.querySelector('.spec-modal-close');
+  var backdrop=modal.querySelector('[data-role="backdrop"]');
+
+  function showModal(title,specs){
+    mTitle.textContent=title||'Equipment Specifications';
+    mList.innerHTML='';
+    specs.forEach(function(item){
+      var parts=item.split(':');
+      if(parts.length>1){
+        var dt=document.createElement('dt');dt.textContent=parts[0].trim();
+        var dd=document.createElement('dd');dd.textContent=parts.slice(1).join(':').trim();
+        mList.appendChild(dt);mList.appendChild(dd);
+      } else {var dd=document.createElement('dd');dd.textContent=item.trim();mList.appendChild(dd);}
+    });
+    modal.classList.add('show');modal.setAttribute('aria-hidden','false');mClose.focus();
+  }
+  function hideModal(){modal.classList.remove('show');modal.setAttribute('aria-hidden','true');}
+
+  document.querySelectorAll('.fac-img').forEach(function(img){
+    img.addEventListener('click',function(e){
+      e.preventDefault();
+      var title=img.alt||'Equipment Specifications';
+      var specText=img.dataset.spec||'Details not available.';
+      var specs=specText.split(';').map(function(s){return s.trim();}).filter(Boolean);
+      showModal(title,specs);
+    });
+  });
+
+  mClose.addEventListener('click',hideModal);
+  backdrop.addEventListener('click',hideModal);
+  document.addEventListener('keydown',function(ev){if(ev.key==='Escape')hideModal();});
+
+  // Set Home as active nav on load
+  document.querySelectorAll('nav a').forEach(function(a){
+    if(a.getAttribute('onclick')&&a.getAttribute('onclick').includes('home'))a.classList.add('active-link');
+  });
+});
+</script>
+
+<script>
+
+const researchGalleryData = {
+
+field:[
+'images/research_action/field/field1.jpg',
+'images/research_action/field/field2.jpg',
+'images/research_action/field/field3.jpg',
+'images/research_action/field/field4.jpg',
+'images/research_action/field/field5.jpg',
+'images/research_action/field/field6.jpg',
+'images/research_action/field/field7.jpg',
+'images/research_action/field/field8.jpg'
+],
+
+lab:[
+'images/research_action/lab/labtest1.jpg',
+'images/research_action/lab/labtest2.jpg',
+'images/research_action/lab/labtest3.jpg',
+'images/research_action/lab/labtest4.jpg',
+'images/research_action/lab/labtest5.jpg',
+'images/research_action/lab/labtest6.jpg',
+'images/research_action/lab/labtest7.jpg',
+'images/research_action/lab/labtest8.jpg',
+'images/research_action/lab/labtest9.jpg',
+'images/research_action/lab/labtest10.jpg',
+'images/research_action/lab/labtest11.jpg',
+'images/research_action/lab/labtest12.jpg'
+],
+
+carbon:[
+'images/research_action/ccs/ccs1.jpg',
+'images/research_action/ccs/ccs2.jpg',
+'images/research_action/ccs/ccs3.jpg',
+'images/research_action/ccs/ccs4.jpg'
+],
+
+digital:[
+'images/research_action/drp/drp1.jpg',
+'images/research_action/drp/drp2.jpg',
+'images/research_action/drp/drp3.jpg',
+'images/research_action/drp/drp4.jpg',
+'images/research_action/drp/drp5.jpg',
+'images/research_action/drp/drp6.jpg',
+'images/research_action/drp/drp7.jpg',
+'images/research_action/drp/drp8.jpg',
+'images/research_action/drp/drp9.jpg'
+],
+
+coal:[
+'images/research_action/coal/coal1.jpg',
+'images/research_action/coal/coal2.jpg',
+'images/research_action/coal/coal3.jpg',
+'images/research_action/coal/coal4.jpg',
+'images/research_action/coal/coal5.jpg',
+'images/research_action/coal/coal6.jpg'
+],
+
+slope:[
+'images/research_action/slope/slope1.jpg',
+'images/research_action/slope/slope2.jpg',
+'images/research_action/slope/slope3.jpg',
+'images/research_action/slope/slope4.jpg'
+]
+
+
+};
+
+
+function openResearchGallery(key){
+
+ try{
+
+ const modal=document.getElementById('researchGallery');
+ const grid=document.getElementById('galleryGrid');
+
+ if(!modal || !grid){
+   alert('Gallery container not found.');
+   return;
+ }
+
+ grid.innerHTML='';
+
+ (researchGalleryData[key] || []).forEach(function(item){
+
+   if(String(item).toLowerCase().endsWith('.mp4')){
+
+      const video=document.createElement('video');
+      video.src=item;
+      video.controls=true;
+      video.style.width='100%';
+      grid.appendChild(video);
+
+   }else{
+
+      const img=document.createElement('img');
+      img.src=item;
+      img.loading='lazy';
+      img.style.width='100%';
+      grid.appendChild(img);
+
+   }
+
+ });
+
+ modal.style.display='block';
+ modal.classList.add('show');
+
+ }catch(err){
+   console.error(err);
+   alert(err.message);
+ }
+
+}
+
+
+function closeResearchGallery(){
+ const modal=document.getElementById('researchGallery');
+ if(!modal) return;
+ modal.classList.remove('show');
+ modal.style.display='none';
+}
+
+document.addEventListener('keydown',function(e){
+ if(e.key==='Escape'){
+   closeResearchGallery();
+ }
+});
+
+</script>
+
+</body>
+</html>
